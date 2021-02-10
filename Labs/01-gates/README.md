@@ -1,5 +1,5 @@
 ## Labs
-https://www.edaplayground.com/x/f8UG
+https://www.edaplayground.com/x/EqRu
 #### De Morgan laws sim
 
 ```vhdl
