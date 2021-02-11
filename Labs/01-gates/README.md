@@ -11,7 +11,9 @@ begin
 end architecture dataflow;
 
 ```
+### Screenshot
 
+![Screenshot](/Labs/01-gates/Images/1.png)
 
 
 Tabulka
