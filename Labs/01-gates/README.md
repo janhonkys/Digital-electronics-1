@@ -44,5 +44,5 @@ begin
     f4_o <= (a_i or (b_i and c_i));
 end architecture dataflow;
 ```
-
+### Screenshot
 ![Screenshot](/Labs/01-gates/Images/2.png)
