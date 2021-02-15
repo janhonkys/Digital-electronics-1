@@ -13,7 +13,7 @@ end architecture dataflow;
 ```
 ### Screenshot
 
-![Screenshot](/Labs/01-gates/Images/1.png)
+![Screenshot](/Labs/01-gates/Images/1a.png)
 
 
 Tabulka
@@ -45,4 +45,4 @@ begin
 end architecture dataflow;
 ```
 ### Screenshot
-![Screenshot](/Labs/01-gates/Images/2.png)
+![Screenshot](/Labs/01-gates/Images/2a.png)
