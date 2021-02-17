@@ -1,5 +1,6 @@
 ## Labs 1
 
+https://github.com/janhonkys/Digital-electronics-1
 #### 1. De Morgan laws sim
 https://www.edaplayground.com/x/8fsS
 ```vhdl
@@ -13,7 +14,7 @@ end architecture dataflow;
 ```
 ### Screenshot
 
-![Screenshot](/Labs/01-gates/Images/1.png)
+![Screenshot](/Labs/01-gates/Images/1a.png)
 
 
 Tabulka
@@ -45,4 +46,4 @@ begin
 end architecture dataflow;
 ```
 ### Screenshot
-![Screenshot](/Labs/01-gates/Images/2.png)
+![Screenshot](/Labs/01-gates/Images/2a.png)
