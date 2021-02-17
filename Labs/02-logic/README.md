@@ -28,6 +28,8 @@ https://github.com/janhonkys/Digital-electronics-1
 ### 3. Binary comparator in VHDL language
 na cviku
 https://www.edaplayground.com/x/SZHT
+4 bitovy
+https://www.edaplayground.com/x/dQwc
 
 ```vhdl
 architecture dataflow of gates is
