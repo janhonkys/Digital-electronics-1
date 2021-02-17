@@ -1,10 +1,9 @@
 ## Labs 2
 
 https://github.com/janhonkys/Digital-electronics-1
-#### 3. Binary comparator in VHDL language
-https://www.edaplayground.com/x/SZHT
 
-odevzdat pravdivostni tabulku velka 
+### Truth table for 2-bit magnitude comparator.
+ 
 | **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B is greater than A** | **B equals A** | **B is less than A** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0 0 | 0 0 | 0 | 1 | 0 |
@@ -23,6 +22,9 @@ odevzdat pravdivostni tabulku velka
 | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
+
+### 3. Binary comparator in VHDL language
+https://www.edaplayground.com/x/SZHT
 
 ```vhdl
 architecture dataflow of gates is
