@@ -1,4 +1,4 @@
-## Labs 1
+## Labs 0
 
 https://github.com/janhonkys/Digital-electronics-1
 #### 1. De Morgan laws sim
