@@ -1,7 +1,7 @@
 ## Labs 2
 
 https://github.com/janhonkys/Digital-electronics-1
-#### 1. De Morgan laws sim
+#### 3. Binary comparator in VHDL language
 https://www.edaplayground.com/x/SZHT
 
 
