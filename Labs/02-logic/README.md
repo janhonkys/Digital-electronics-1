@@ -1,8 +1,12 @@
-## Labs 0
+## Labs 2
 
 https://github.com/janhonkys/Digital-electronics-1
 #### 1. De Morgan laws sim
-https://www.edaplayground.com/x/8fsS
+https://www.edaplayground.com/x/SZHT
+
+
+
+
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -17,20 +21,10 @@ end architecture dataflow;
 ![Screenshot](/Labs/01-gates/Images/1a.png)
 
 
-Tabulka
-| **c** | **b** |**a** | **f(c,b,a)** | **f(c,b,a)nand** | **f(c,b,a)nor** |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 | 0 | 1 | 1 | 1 |
-| 0 | 0 | 1 | 1 | 1 | 1 |
-| 0 | 1 | 0 | 0 | 0 | 0 |
-| 0 | 1 | 1 | 0 | 0 | 0 |
-| 1 | 0 | 0 | 0 | 0 | 0 |
-| 1 | 0 | 1 | 0 | 0 | 0 |
-| 1 | 1 | 0 | 1 | 1 | 1 |
-| 1 | 1 | 1 | 0 | 0 | 0 |
+
 
 #### 2. Verification of Distributive laws
-https://www.edaplayground.com/x/Aqyz
+
 
 
 ```vhdl
