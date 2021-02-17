@@ -26,6 +26,7 @@ https://github.com/janhonkys/Digital-electronics-1
 ### 2. Dodělat karnangovy mapy a zjednodušené funkce
 
 ### 3. Binary comparator in VHDL language
+na cviku
 https://www.edaplayground.com/x/SZHT
 
 ```vhdl
