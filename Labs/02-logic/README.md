@@ -23,6 +23,8 @@ https://github.com/janhonkys/Digital-electronics-1
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
+### 2. Dodělat karnangovy mapy a zjednodušené funkce
+
 ### 3. Binary comparator in VHDL language
 https://www.edaplayground.com/x/SZHT
 
