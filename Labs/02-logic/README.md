@@ -31,7 +31,7 @@ https://github.com/janhonkys/Digital-electronics-1
 4 bitovy
 https://www.edaplayground.com/x/dQwc
 
-# Design
+#### Design
 ```vhdl
 library ieee;
 use ieee.std_logic_1164.all;
