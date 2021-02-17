@@ -4,8 +4,25 @@ https://github.com/janhonkys/Digital-electronics-1
 #### 3. Binary comparator in VHDL language
 https://www.edaplayground.com/x/SZHT
 
-
-
+odevzdat pravdivostni tabulku velka 
+| **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B is greater than A** | **B equals A** | **B is less than A** |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 0 | 0 0 | 0 | 1 | 0 |
+| 1 | 0 0 | 0 1 | 0 | 0 | 1 |
+| 2 | 0 0 | 1 0 | 0 | 0 | 1 |
+| 3 | 0 0 | 1 1 | 0 | 0 | 1 |
+| 4 | 0 1 | 0 0 | 1 | 0 | 0 |
+| 5 | 0 1 | 0 1 | 0 | 1 | 0 |
+| 6 | 0 1 | 1 0 | 0 | 0 | 1 |
+| 7 | 0 1 | 1 1 | 0 | 0 | 1 |
+| 8 | 1 0 | 0 0 | 1 | 0 | 0 |
+| 9 | 1 0 | 0 1 | 1 | 0 | 0 |
+| 10 | 1 0 | 1 0 | 0 | 1 | 0 |
+| 11 | 1 0 | 1 1 | 0 | 0 | 1 |
+| 12 | 1 1 | 0 0 | 1 | 0 | 0 |
+| 13 | 1 1 | 0 1 | 1 | 0 | 0 |
+| 14 | 1 1 | 1 0 | 1 | 0 | 0 |
+| 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
 ```vhdl
 architecture dataflow of gates is
