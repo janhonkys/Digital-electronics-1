@@ -1,7 +1,7 @@
 ## Labs 1
 
 https://github.com/janhonkys/Digital-electronics-1
-#### 1. De Morgan laws sim-
+#### 1. De Morgan laws sim
 https://www.edaplayground.com/x/8fsS
 ```vhdl
 architecture dataflow of gates is
