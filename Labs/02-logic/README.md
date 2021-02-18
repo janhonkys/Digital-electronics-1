@@ -171,8 +171,8 @@ end architecture testbench;
 
 ```
 #### Console output
-analyze design.vhd
-analyze testbench.vhd
+analyze design.vhd  
+analyze testbench.vhd  
 elaborate tb_comparator_2bit
 testbench.vhd:51:9:@0ms:(report note): Stimulus process started
 testbench.vhd:96:16:@1100ns:(assertion error): Test failed for input combination: 0000, 1010
