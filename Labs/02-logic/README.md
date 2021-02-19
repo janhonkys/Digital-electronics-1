@@ -27,7 +27,7 @@ https://github.com/janhonkys/Digital-electronics-1
 https://www.edaplayground.com/x/8SHZ
 #### Karnaugh maps
 
-![Screenshot](/Labs/02-gates/Images/kar.jpg)
+![Screenshot](/Labs/02-logic/Images/kar.jpg)
 ### 3. A 4-bit binary comparator
 4 bitovy
 https://www.edaplayground.com/x/dQwc
