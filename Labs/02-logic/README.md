@@ -23,11 +23,12 @@ https://github.com/janhonkys/Digital-electronics-1
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
-### 2. Dodělat karnangovy mapy a zjednodušené funkce
+### 2. A 2-bit comparator
+https://www.edaplayground.com/x/8SHZ
 ### Screenshot
 
 ![Screenshot](/Labs/01-gates/Images/1a.png)
-### 3. Binary comparator in VHDL language
+### 3. A 4-bit binary comparator
 4 bitovy
 https://www.edaplayground.com/x/dQwc
 
