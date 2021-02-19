@@ -25,7 +25,7 @@ https://github.com/janhonkys/Digital-electronics-1
 
 ### 2. A 2-bit comparator
 https://www.edaplayground.com/x/8SHZ
-### Screenshot
+#### Screenshot
 
 ![Screenshot](/Labs/01-gates/Images/1a.png)
 ### 3. A 4-bit binary comparator
