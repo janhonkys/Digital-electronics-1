@@ -31,7 +31,6 @@ https://www.edaplayground.com/x/8SHZ
 
 ![Screenshot](/Labs/02-logic/Images/kar.jpg)
 ### 3. A 4-bit binary comparator
-4 bitovy
 https://www.edaplayground.com/x/dQwc
 
 #### Design
