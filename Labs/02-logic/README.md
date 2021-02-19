@@ -23,6 +23,8 @@ https://github.com/janhonkys/Digital-electronics-1
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
+![Screenshot](/Labs/02-logic/Images/equalsless.jpg)
+
 ### 2. A 2-bit comparator
 https://www.edaplayground.com/x/8SHZ
 #### Karnaugh maps
