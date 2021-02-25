@@ -61,3 +61,6 @@ p_stimulus : process
     end process p_stimulus;
 
 ```
+#### Screenshot
+
+![Screenshot](/Labs/03-Vivado/Images/sig.png)
