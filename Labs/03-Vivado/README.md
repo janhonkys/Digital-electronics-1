@@ -65,4 +65,4 @@ p_stimulus : process
 
 ![Screenshot](/Labs/03-Vivado/Images/sig.png)
 ### 3. Vivado tutorial
-Project creation could be realised from start menu by click to create project, next, set name and location. 
+Project creation could be realised from start menu by click to create project, next, set name and location, next, choose RTL, add sources, create file - VHDL, set file name. 
