@@ -96,4 +96,4 @@ Click "Create File", make sure your file type is "VHDL" and type file name, it s
 Under "Sources", open folder "Simulation Sources", Right click on folder "sim_1" and select "Add Sources...", Click "Next >", Click "Create File", make sure your file type is "VHDL" and type file name that begins with "tb_" and then your project name, Click "OK", Click "Finish", Click "OK" and "Yes"
 
 #### Running simulation
-After you add your source code to previously created files, click "Run Simulation" in the left column and then select "Run Behavioral Simulation", Wait for a moment, then your simulation graphs are opened in the new window, you can extend it by clicking the "Maximize" button in right corner of this window
+Click "Run Simulation" in the left column and then select "Run Behavioral Simulation".
