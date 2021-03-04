@@ -134,13 +134,3 @@ p_stimulus : process
 ![Screenshot](/Labs/04-segment/Images/graph.jpg)
 ### 3. Vivado tutorial
 #### Project creation
-Open Vivado, Under "Quick Start", click "Create Project", Click "Next >", Type project name and select project location, then click "Next>", Click "Next >"
-
-#### Adding source file
-Click "Create File", make sure your file type is "VHDL" and type file name, it should same as project name, Click "OK", Click "Next >", Click "Next >", Click on "Boards" and select your board, for example "Nexys A7-50T", Click "Next >", Click "Finish", Click "OK" and "Yes"
-
-#### Adding testbench file
-Under "Sources", open folder "Simulation Sources", Right click on folder "sim_1" and select "Add Sources...", Click "Next >", Click "Create File", make sure your file type is "VHDL" and type file name that begins with "tb_" and then your project name, Click "OK", Click "Finish", Click "OK" and "Yes"
-
-#### Running simulation
-Click "Run Simulation" in the left column and then select "Run Behavioral Simulation".
