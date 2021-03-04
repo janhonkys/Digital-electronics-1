@@ -2,26 +2,26 @@
 
 https://github.com/janhonkys/Digital-electronics-1
 
-### 1. Figure or table with connection of 16 slide switches and 16 LEDs on Nexys A7 board.
+### Preparation tasks
 
-| **LED** | **Connection** | **Switch** | **Connection** | 
-| :-: | :-: | :-: | :-: |
-| LED0 | H17 | SW0 | J15 |
-| LED1 | K15 | SW1 | L16 |
-| LED2 | J13 | SW2 | M13 |
-| LED3 | N14 | SW3 | R15 |
-| LED4 | R18 | SW4 | R17 |
-| LED5 | V17 | SW5 | T18 |
-| LED6 | U17 | SW6 | U18 |
-| LED7 | U16 | SW7 | R13 |
-| LED8 | V16 | SW8 | T8 |
-| LED9 | T15 | SW9 | U8 |
-| LED10 | U14 | SW10 | R16 |
-| LED11 | T16 | SW11 | T13 |
-| LED12 | V15 | SW12 | H6 |
-| LED13 | V14 | SW13 | U12 |
-| LED14 | V12 | SW14 | U11 |
-| LED15 | V11 | SW15 | V10 |
+| Hex | Inputs | A | B | C | D | E | F | G |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 1 | 0001 | 1 | 0 | 0 | 1 | 1 | 1 | 1 |
+| 2 | 0010 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
+| 3 | 0011 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 4 | 0100 | 1 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 5 | 0101 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| 6 | 0110 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 7 | 0111 | 0 | 0 | 1 | 1 | 1 | 1 | 1 |
+| 8 | 1000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | 1001 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| A | 1010 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| b | 1011 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| C | 1100 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
+| d | 1101 | 1 | 0 | 0 | 0 | 0 | 1 | 0 |
+| E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ### 2. Two-bit wide 4-to-1 multiplexer. Submit:
 #### Architecture
