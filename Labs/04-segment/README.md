@@ -131,7 +131,7 @@ p_stimulus : process
 ```
 #### Screenshot
 
-![Screenshot](/Labs/03-Vivado/Images/graph.png)
+![Screenshot](/Labs/03-Vivado/Images/graph.jpg)
 ### 3. Vivado tutorial
 #### Project creation
 Open Vivado, Under "Quick Start", click "Create Project", Click "Next >", Type project name and select project location, then click "Next>", Click "Next >"
