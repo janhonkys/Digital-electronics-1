@@ -132,7 +132,8 @@ p_stimulus : process
 #### Screenshot
 
 ![Screenshot](/Labs/04-segment/Images/graph.jpg)
-####7-segment module instantiation
+
+#### 7-segment module instantiation
 ```vhdl
 -- Instance (copy) of hex_7seg entity
     hex2seg : entity work.hex_7seg
