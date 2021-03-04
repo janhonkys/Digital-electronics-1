@@ -1,4 +1,4 @@
-## Labs 3
+## Labs 4
 
 https://github.com/janhonkys/Digital-electronics-1
 
