@@ -1,7 +1,7 @@
 ## Labs 4
 
 https://github.com/janhonkys/Digital-electronics-1
-
+CHYBY TABULKA 1
 ### 1. Preparation tasks
 
 | Hex | Inputs | A | B | C | D | E | F | G |
@@ -132,5 +132,20 @@ p_stimulus : process
 #### Screenshot
 
 ![Screenshot](/Labs/04-segment/Images/graph.jpg)
+####7-segment module instantiation
+```vhdl
+-- Instance (copy) of hex_7seg entity
+    hex2seg : entity work.hex_7seg
+        port map(
+            hex_i    => SW, 
+            seg_o(6) => CA, --6 vodič přiřadí na CA, 6 MSB 
+            seg_o(5) => CB,
+            seg_o(4) => CC,
+            seg_o(3) => CD,
+            seg_o(2) => CE,
+            seg_o(1) => CF,
+            seg_o(0) => CG
+        );
+```
 ### 3. Vivado tutorial
 #### Project creation
