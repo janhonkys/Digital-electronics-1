@@ -148,7 +148,7 @@ p_stimulus : process
             seg_o(0) => CG
         );
 ```
-### LED(7:4) indicators.
+### 3. LED(7:4) indicators.
 | **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 1 | 0 | 0 | 0 |
