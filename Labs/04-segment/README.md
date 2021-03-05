@@ -6,7 +6,6 @@ CHYBY TABULKA 1
 #### Tables with connection of 7-segment displays on Nexys A7 board
 
 #### Cathodes
-
 LEDs light is ON, cathode is low, 0 V.
 
 | **Component** | **Pin** |
@@ -20,7 +19,6 @@ LEDs light is ON, cathode is low, 0 V.
 | CG | L18 |
 
 #### Anodes
-
 When 0V applied, transistor will open, digit light up.
 
 | **Component** | **Pin** |
