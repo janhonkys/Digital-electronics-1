@@ -3,7 +3,38 @@
 https://github.com/janhonkys/Digital-electronics-1
 CHYBY TABULKA 1
 ### 1. Preparation tasks
+#### Tables with connection of 7-segment displays on Nexys A7 board
 
+#### Cathodes
+
+LEDs light is ON, cathode is low, 0.
+
+| **Component** | **Pin** |
+| :-: | :-: |
+| CA | T10 |
+| CB | R10 |
+| CC | K16 |
+| CD | K13 |
+| CE | P15 |
+| CF | T11 |
+| CG | L18 |
+
+#### Anodes
+
+When 0V applied, transistor will open, digit light up.
+
+| **Component** | **Pin** |
+| :-: | :-: |
+| AN[0] | J17 |
+| AN[1] | J18 |
+| AN[2] | T9 |
+| AN[3] | J14 |
+| AN[4] | P14 |
+| AN[5] | T14 |
+| AN[6] | K2 |
+| AN[7] | U13 |
+
+#### Decoder truth table for common anode 7-segment display
 | Hex | Inputs | A | B | C | D | E | F | G |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
