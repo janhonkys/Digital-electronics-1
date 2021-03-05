@@ -7,7 +7,7 @@ CHYBY TABULKA 1
 
 #### Cathodes
 
-LEDs light is ON, cathode is low, 0.
+LEDs light is ON, cathode is low, 0 V.
 
 | **Component** | **Pin** |
 | :-: | :-: |
