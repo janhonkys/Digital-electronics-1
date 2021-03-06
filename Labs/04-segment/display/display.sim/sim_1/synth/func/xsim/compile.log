@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/De1git/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/synth/func/xsim/tb_hex_7seg_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hex_7seg'
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/De1git/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_hex_7seg'
+ERROR: [VRFC 10-719] formal port/generic <hex_i> is not declared in <hex_7seg> [D:/De1git/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:47]
+ERROR: [VRFC 10-3353] formal port 'led_obuf' has no actual or default value [D:/De1git/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:45]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [D:/De1git/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:38]
+INFO: [VRFC 10-3070] VHDL file 'D:/De1git/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd' ignored due to errors

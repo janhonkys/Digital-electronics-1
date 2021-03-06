@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 04.03.2021 18:04:22
+-- Create Date: 03.03.2021 15:32:44
 -- Design Name: 
 -- Module Name: tb_hex_7seg - Behavioral
 -- Project Name: 
@@ -36,18 +36,26 @@ entity tb_hex_7seg is
 end tb_hex_7seg;
 
 architecture Behavioral of tb_hex_7seg is
--- Local signals
+
+    -- Local signals
     signal s_hex       : std_logic_vector(4 - 1 downto 0);
     signal s_seg       : std_logic_vector(7 - 1 downto 0);
-   
+
 begin
- -- Connecting testbench signals with comparator_2bit entity (Unit Under Test)
-    uut_comparator_2bit : entity work.hex_7seg
+
+    -- Connecting testbench signals with hex_7seg entity (Unit Under Test)
+    uut_hex_7seg : entity work.hex_7seg
         port map(
             hex_i           => s_hex,
-            seg_o           => s_seg  
+            seg_o           => s_seg
         );
 
+
+
+
+ --------------------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------------------
 p_stimulus : process
     begin
         -- Report a note at the begining of stimulus process
@@ -62,7 +70,7 @@ p_stimulus : process
         s_hex <= "0011"; wait for 50 ns;
         
         s_hex <= "0100"; wait for 50 ns;
-        
+       
         s_hex <= "0101"; wait for 50 ns;
         
         s_hex <= "0110"; wait for 50 ns;
@@ -84,10 +92,10 @@ p_stimulus : process
         s_hex <= "1110"; wait for 50 ns;
         
         s_hex <= "1111"; wait for 50 ns;
-        
+
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
-
+    
 end Behavioral;

@@ -1,0 +1,300 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar  5 22:06:30 2021
+# Process ID: 14428
+# Current directory: D:/De1git/Digital-electronics-1/Labs/test/display1/display1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/De1git/Digital-electronics-1/Labs/test/display1/display1.runs/synth_1/top.vds
+# Journal file: D:/De1git/Digital-electronics-1/Labs/test/display1/display1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a50ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9000
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/hex_7seg.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (1#1) [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/hex_7seg.vhd:41]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:107]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:109]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:111]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:113]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:115]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:117]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:119]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:121]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:123]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:125]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:127]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:129]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:131]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:133]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:135]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'top' (2#1) [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/sources_1/new/top.vhd:50]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1002.719 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:11]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK100MHZ]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:11]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CA'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CB'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CD'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CE'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CF'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CG'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/De1git/Digital-electronics-1/Labs/test/display1/display1.srcs/constrs_1/new/Nexys A7-50T.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1002.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1002.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1002.719 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1002.719 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1002.719 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1002.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 45 Warnings, 29 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 1002.719 ; gain = 0.000
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/De1git/Digital-electronics-1/Labs/test/display1/display1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  5 22:07:24 2021...
