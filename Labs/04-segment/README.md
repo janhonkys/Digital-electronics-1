@@ -1,7 +1,7 @@
 ## Labs 4
 
 https://github.com/janhonkys/Digital-electronics-1
-CHYBY TABULKA 1
+
 ### 1. Preparation tasks
 #### Tables with connection of 7-segment displays on Nexys A7 board
 
