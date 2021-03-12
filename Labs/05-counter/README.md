@@ -30,8 +30,27 @@ When the button is off "0", 0 V is on the input pin. When on "1" 3.3 V is on the
 
 
 
-#### VHDL
+#### VHDL p_cnt_up_down
 ```vhdl
+ p_cnt_up_down : process(clk)
+    begin
+        if rising_edge(clk) then    --spouští se s nástupnou hranou(rising_edge), kdyby sestupná tak falling_edge
+        
+            if (reset = '1') then               -- Synchronous reset    --asynchronní reset, radek 50 a 51 přesunout nad if rising_edge a za clk 48 přidat , reset
+                s_cnt_local <= (others => '0'); -- Clear all bits   --reset v 1, vymažeme čítač, '0' se použije protože nevíme kolika bitový je čitač
+
+            elsif (en_i = '1') then       -- Test if counter is enabled  --když enable v 1, přičteme 1, když v 0, neděje se nic
+
+
+                -- TEST COUNTER DIRECTION HERE
+
+
+                s_cnt_local <= s_cnt_local + 1;
+
+
+            end if;
+        end if;
+    end process p_cnt_up_down;
  
 ```
 #### Screenshot
