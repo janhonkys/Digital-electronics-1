@@ -69,6 +69,28 @@ p_reset_gen : process
     end process p_reset_gen;
    
 ``` 
+#### VHDL stimulus processes 
+```vhdl 
+p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+
+        -- Enable counting
+        s_en     <= '1';
+        
+        -- Change counter direction
+        s_cnt_up <= '1';
+        wait for 380 ns;
+        s_cnt_up <= '0';
+        wait for 220 ns;
+
+        -- Disable counting
+        s_en     <= '0';
+
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+``` 
 #### Screenshot
 
 ![Screenshot](/Labs/04-segment/Images/led.png)
