@@ -25,7 +25,7 @@ When the button is off "0", 0 V is on the input pin. When on "1" 3.3 V is on the
 | 500&nbsp;ms | 50 000 000 | `x"2fa_f080"` | `b"0010_1111_1010_1111_0000_1000_0000"` |
 | 1&nbsp;sec | 100 000 000 | `x"5f5_e100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
 
-
+### 2. Bidirectional counter
 
 
 
