@@ -98,4 +98,4 @@ p_stimulus : process
 ``` 
 #### Screenshot
 
-![Screenshot](/Labs/04-segment/Images/led.png)
+![Screenshot](/Labs/05-counter/Images/2sc.png)
