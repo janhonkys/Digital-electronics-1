@@ -65,9 +65,14 @@ p_reset_gen : process
         wait for 73 ns;
 
         s_reset <= '0';
+        wait for 100 ns;
+        
+        s_reset <= '1';
+        wait for 43 ns;
+        
+        s_reset <= '0';
         wait;
     end process p_reset_gen;
-   
 ``` 
 #### VHDL stimulus processes 
 ```vhdl 
