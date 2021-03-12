@@ -53,6 +53,22 @@ When the button is off "0", 0 V is on the input pin. When on "1" 3.3 V is on the
     end process p_cnt_up_down;
  
 ```
+#### VHDL reset processes 
+```vhdl 
+p_reset_gen : process
+    begin
+        s_reset <= '0';
+        wait for 12 ns;     --reset v 0, po 12 ns dáme reset do 1, s další nástupnou hranou se s_cn dá do 0
+        
+        -- Reset activated
+        s_reset <= '1';
+        wait for 73 ns;
+
+        s_reset <= '0';
+        wait;
+    end process p_reset_gen;
+   
+``` 
 #### Screenshot
 
 ![Screenshot](/Labs/04-segment/Images/led.png)
