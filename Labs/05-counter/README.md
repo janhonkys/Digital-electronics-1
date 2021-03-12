@@ -3,7 +3,7 @@
 https://github.com/janhonkys/Digital-electronics-1
 
 ### 1. Preparation tasks
-#### Tables with connection on Nexys A7 board
+#### Tables with connection of bottoms on Nexys A7 board
 When the button is off "0", 0 V is on the input pin. When on "1" 3.3 V is on the input pin. 
 
 | **Component** | **Pin** |
