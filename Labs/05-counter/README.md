@@ -156,6 +156,6 @@ p_stimulus : process
     AN <= b"1111_1110";
 ``` 
 
-#### Screenshot
+#### Schema
 
 ![Screenshot](/Labs/05-counter/Images/schema.jpg)
