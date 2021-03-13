@@ -56,6 +56,7 @@ architecture Behavioral of top is
 
     -- Internal clock enable
     signal s_en  : std_logic;
+    signal s_en16  : std_logic;
     -- Internal counter
     signal s_cnt : std_logic_vector(4 - 1 downto 0);
 
@@ -67,7 +68,7 @@ begin
         generic map
         (
             --- WRITE YOUR CODE HERE
-            g_MAX => 100000000
+            g_MAX => 25000000
         )
         port map
         (
@@ -83,7 +84,7 @@ begin
         generic map
         (
             --- WRITE YOUR CODE HERE
-            g_CNT_WIDTH => 4        --stejná šíøka jako signál s_cnt
+            g_CNT_WIDTH => 4        --stejná ší?ka jako signál s_cnt
         )
         port map(
             --- WRITE YOUR CODE HERE
@@ -96,7 +97,44 @@ begin
         );
 
     -- Display input value on LEDs
-    LED(3 downto 0) <= s_cnt;
+    --LED(3 downto 0) <= s_cnt;
+    
+     --------------------------------------------------------------------
+    -- Instance (copy) of clock_enable entity
+    clk_en1 : entity work.clock_enable
+        generic map
+        (
+            --- WRITE YOUR CODE HERE
+            g_MAX => 1000000
+        )
+        port map
+        (
+            --- WRITE YOUR CODE HERE
+            clk     => CLK100MHZ,
+            reset   => BTNC,
+            ce_o    => s_en16
+        );
+
+    --------------------------------------------------------------------
+    -- Instance (copy) of cnt_up_down entity
+    bin_cnt1 : entity work.cnt_up_down
+        generic map
+        (
+            --- WRITE YOUR CODE HERE
+            g_CNT_WIDTH => 16        --stejná ší?ka jako signál s_cnt
+        )
+        port map(
+            --- WRITE YOUR CODE HERE
+            clk         => CLK100MHZ,
+            reset       => BTNC,
+            en_i        => s_en,
+            cnt_up_i    => SW(0),
+            cnt_o       => LED(15 downto 0)
+            
+        );
+
+    -- Display input value on LEDs
+    --LED(3 downto 0) <= s_cnt;
 
     --------------------------------------------------------------------
     -- Instance (copy) of hex_7seg entity

@@ -25,7 +25,7 @@ end entity tb_cnt_up_down;
 architecture testbench of tb_cnt_up_down is
 
     -- Number of bits for testbench counter
-    constant c_CNT_WIDTH         : natural := 5;   -- 5 bitù šíøka
+    constant c_CNT_WIDTH         : natural := 4;   -- 5 bitù šíøka
     constant c_CLK_100MHZ_PERIOD : time    := 10 ns;  -- perioda 10 ns
 
     --Local signals
