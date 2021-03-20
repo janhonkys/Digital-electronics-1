@@ -87,6 +87,4 @@ begin
     end process p_7seg_decoder;
 
 
-
-
 end Behavioral;

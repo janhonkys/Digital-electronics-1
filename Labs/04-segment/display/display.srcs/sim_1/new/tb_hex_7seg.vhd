@@ -95,6 +95,7 @@ p_stimulus : process
 
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
+        
         wait;
     end process p_stimulus;
     

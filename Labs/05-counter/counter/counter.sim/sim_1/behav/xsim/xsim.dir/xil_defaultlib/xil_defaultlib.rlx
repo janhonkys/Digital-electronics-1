@@ -4,7 +4,7 @@ Nov 18 2020
 09:47:47
 D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sim_1/new/tb_clock_enable.vhd,1615623292,vhdl,,,,tb_clock_enable,,,,,,,,
 D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd,1615623281,vhdl,,,,tb_cnt_up_down,,,,,,,,
-D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/clock_enable.vhd,1615623219,vhdl,D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sim_1/new/tb_clock_enable.vhd,,,clock_enable,,,,,,,,
-D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd,1615623228,vhdl,D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd,,,cnt_up_down,,,,,,,,
+D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/clock_enable.vhd,1615623219,vhdl,D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/top.vhd,,,clock_enable,,,,,,,,
+D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd,1615623228,vhdl,D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/top.vhd,,,cnt_up_down,,,,,,,,
 D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/hex_7seg.vhd,1615579087,vhdl,D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/top.vhd,,,hex_7seg,,,,,,,,
-D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/top.vhd,1615623647,vhdl,,,,top,,,,,,,,
+D:/De1git/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/top.vhd,1616151800,vhdl,,,,top,,,,,,,,
