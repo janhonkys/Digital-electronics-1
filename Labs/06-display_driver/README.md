@@ -170,8 +170,11 @@ begin
 end architecture testbench;
 
 ``` 
-
 #### Screenshot with simulated time waveforms
+
+![Screenshot](/Labs/06-display_driver/Images/signals.png)
+
+#### Screenshot with simulated time waveforms 2
 
 ![Screenshot](/Labs/06-display_driver/Images/signals_changedata.png)
 
