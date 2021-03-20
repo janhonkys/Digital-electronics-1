@@ -232,4 +232,7 @@ end architecture Behavioral;
 
 ``` 
 
+### 3. Eight-digit driver
+![Screenshot](/Labs/06-display_driver/Images/8bit.jpg)
+
 
