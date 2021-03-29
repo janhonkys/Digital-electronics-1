@@ -500,7 +500,7 @@ p_stimulus : process
 ```
 
 #### Screenshot with simulated time waveforms
-#### p_d_ff_arst, p_d_ff_rst, p_jk_ff_rst, p_t_ff_rst
+#### p_d_ff_arst
 ![Screenshot](/Labs/06-display_driver/Images/signals_changedata.png)
 #### p_d_ff_rst
 ![Screenshot](/Labs/06-display_driver/Images/signals_changedata.png)
