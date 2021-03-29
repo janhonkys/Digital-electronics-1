@@ -41,7 +41,7 @@ https://github.com/janhonkys/Digital-electronics-1
 
 
 
-### 2. 
+### 2. VHDL code for D latch
 
 #### Listing of VHDL code of the process p_mux with syntax highlighting.
 ```vhdl
@@ -60,9 +60,9 @@ https://github.com/janhonkys/Digital-electronics-1
 
 
 
-``` 
 
-### 3. Eight-digit driver
+
+### 3. VHDL code for flip-flops
 ![Screenshot](/Labs/06-display_driver/Images/8bit.jpg)
 
 
