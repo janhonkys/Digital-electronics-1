@@ -167,7 +167,7 @@ https://github.com/janhonkys/Digital-electronics-1
 
 #### Screenshot with simulated time waveforms
 
-![Screenshot](/Labs/06-display_driver/Images/sigfnals.png)
+![Screenshot](/Labs/07-ffs/Images/d_latch.jpg)
 
 ### 3. Flip-flops
 #### VHDL code listing of the processes 
