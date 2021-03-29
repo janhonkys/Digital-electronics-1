@@ -3,7 +3,7 @@
 https://github.com/janhonkys/Digital-electronics-1
 
 ### 1. Preparation tasks
-![Screenshot](/Labs/07-fss/Images/rov.png)
+![Screenshot](/Labs/07-ffs/Images/rov.jpg)
 
 
 <!--
@@ -501,15 +501,15 @@ p_stimulus : process
 
 #### Screenshot with simulated time waveforms
 #### p_d_ff_arst
-![Screenshot](/Labs/06-display_driver/Images/signals_changedata.png)
+![Screenshot](/Labs/07-ffs/Images/d_ff_arst.jpg)
 #### p_d_ff_rst
-![Screenshot](/Labs/06-display_driver/Images/signals_changedata.png)
+![Screenshot](/Labs/07-ffs/Images/d_ff_rst.jpg)
 #### p_jk_ff_rst
-![Screenshot](/Labs/06-display_driver/Images/signals_changedata.png)
+![Screenshot](/Labs/07-ffs/Images/jk_ff_rst.jpg)
 #### p_t_ff_rst
-![Screenshot](/Labs/06-display_driver/Images/signals_changedata.png)
+![Screenshot](/Labs/07-ffs/Images/t_ff_rst.jpg)
 
 ### 4. Shift register
-![Screenshot](/Labs/06-display_driver/Images/8bit.jpg)
+
 
 
