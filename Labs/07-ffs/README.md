@@ -3,7 +3,7 @@
 https://github.com/janhonkys/Digital-electronics-1
 
 ### 1. Preparation tasks
-![Screenshot](/Labs/07-fss/Images/rov.jpg)
+![Screenshot](/Labs/07-fss/Images/rov.png)
 
 
 <!--
