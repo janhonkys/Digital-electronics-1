@@ -1,7 +1,7 @@
 ## Labs 7
 
 https://github.com/janhonkys/Digital-electronics-1
-![Screenshot](/Labs/07-fss/Images/rov.jpg)
+
 ### 1. Preparation tasks
 ![Screenshot](/Labs/07-fss/Images/rov.jpg)
 
