@@ -301,6 +301,9 @@ end process p_t_ff_rst;
         wait for 10ns;
         --d sequence
         
+        assert ((s_arst = '0') and (s_q = '1') and (s_q_bar = '0'))
+        report "Test failed for reset low, after clk rising when s_d = '1'" severity error;
+        
        
         report "Stimulus process finished" severity note;
         wait;
@@ -364,6 +367,9 @@ end process p_t_ff_rst;
         s_d  <= '0';
         wait for 10ns;
         --d sequence
+        assert ((s_rst = '1') and (s_q = '1') and (s_q_bar = '0'))
+	    report "Test failed for reset high, before clk rising when s_d = '1'" severity error;
+	
         
        
         report "Stimulus process finished" severity note;
@@ -418,7 +424,10 @@ p_clk_gen : process
         wait for 20ns;
         s_j  <= '1';
         s_k  <= '1';
+        assert ((s_rst = '0') and (s_j = '0') and (s_k = '0') and (s_q = '0') and (s_q_bar = '1'))
+	    report "Test 'no change' failed for reset low, after clk rising when s_j = '0' and s_k = '0'" severity error;
         
+    
         wait for 10ns;
         s_j  <= '1';
         s_k  <= '1';
@@ -470,7 +479,8 @@ p_clk_gen : process
 p_stimulus : process
     begin
         report "Stimulus process started" severity note;
-        
+        assert ((s_rst = '0') and (s_t = '0') and (s_q = '0') and (s_q_bar = '1'))
+	    report "Test 'no change' failed for reset low, after clk rising when s_t = '0'" severity error;
           --d sequence 
         wait for 13ns;
         s_t  <= '0';
