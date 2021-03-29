@@ -39,7 +39,7 @@ https://github.com/janhonkys/Digital-electronics-1
    | ![rising](Images/eq_uparrow.png) | 1 | 1 | 0 | Toggle (=invert) |
 
 
-![Screenshot](/Labs/06-display_driver/Images/timing.png)
+
 
 ### 2. 
 
