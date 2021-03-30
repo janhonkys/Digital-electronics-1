@@ -520,6 +520,6 @@ p_stimulus : process
 ![Screenshot](/Labs/07-ffs/Images/t_ff_rst.jpg)
 
 ### 4. Shift register
-
+![Screenshot](/Labs/07-ffs/Images/schema.jpg)
 
 
