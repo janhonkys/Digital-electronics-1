@@ -12,7 +12,7 @@ https://github.com/janhonkys/Digital-electronics-1
 | **Output R** | `0` | `0` | `0` | `0` | `0` | `1` | `0` | `0` | `0` | `1` | `0` | `0` | `0` | `0` | `1` | `0` |
 
 ### Connection of RGB LEDs on Nexys A7 board and completed table
-![](Images/refer_zapojeni.png)
+![Screenshot](/Labs/08-traffic_lights/Images/zap.png)
 
 | **RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** |
 | :-: | :-: | :-: | :-: | :-: |
