@@ -7,7 +7,8 @@ Adam Hora, Daniel Haluška, Marek Halaš, Jan Honkyš
 
 
 ### Cíle projektu
-Cílem projektu je vytvořit terminál pro odemčení/zamčení dveří pomocí 4místného PIN kódu, s použitím 4x3 tlačítek, 4 sedmisegmentového displeje, relé pro ovládání zámku dveří.  
+Cílem projektu je vytvořit terminál pro odemčení/zamčení dveří pomocí 4místného PIN kódu, s použitím 4x3 tlačítek, 4 sedmisegmentového displeje, relé pro ovládání zámku dveří.
+
 
 #### Vizualizace řešení
 ![Screenshot](/Labs/project/Images/doorschema1.jpg)
@@ -15,7 +16,7 @@ Cílem projektu je vytvořit terminál pro odemčení/zamčení dveří pomocí 
 ### Popis hardwaru
 #### Základní deska
 ##### Arty A7: Artix-7 FPGA
-
+Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 
 ### Popis VHDL modulů a simulací
 
