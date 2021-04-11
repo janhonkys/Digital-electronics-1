@@ -67,15 +67,7 @@ end Behavioral;
 
 
 ### Popis TOP modulu a simulace
-#### Listing of VHDL code of sequential process p_traffic_fsm with syntax highlighting,
-```vhdl
- 
-```
-#### Listing of VHDL code of combinatorial process p_output_fsm with syntax highlighting,
-```vhdl 
 
-
-``` 
 ### Video
 
 ### Reference
