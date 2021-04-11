@@ -13,7 +13,7 @@ Jan Honkyš
 
 
 ### Connection of RGB LEDs on Nexys A7 board and completed table
-![Screenshot](/Labs/project/Images/door schema1.png)
+![Screenshot](/Labs/project/Images/doorschema1.png)
 
 
 
