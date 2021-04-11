@@ -12,13 +12,11 @@ Cílem projektu je vytvořit terminál pro odemčení/zamčení dveří pomocí 
 #### Vizualizace řešení
 ![Screenshot](/Labs/project/Images/doorschema1.jpg)
 
+### Popis hardwaru
 
+### Popis VHDL modulů a simulací
 
-
-### 2. Display driver
-####State diagram
-
-
+### Popis TOP modulu a simulace
 #### Listing of VHDL code of sequential process p_traffic_fsm with syntax highlighting,
 ```vhdl
  
