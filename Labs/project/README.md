@@ -3,10 +3,7 @@
 
 
 ### Členové týmu
-Adam Hora
-Daniel Haluška
-Marek Halaš
-Jan Honkyš
+Adam Hora, Daniel Haluška, Marek Halaš, Jan Honkyš
 
 
 ### Cíle projektu
