@@ -20,6 +20,7 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 ### Popis VHDL modulů a simulací
 
 #### Seven-segment display decoder
+![Screenshot](/Labs/project/Images/hex7.jpg)
 #### Architecture
 ```vhdl
 architecture Behavioral of hex_7seg is
