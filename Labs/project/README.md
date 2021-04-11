@@ -13,13 +13,16 @@ Cílem projektu je vytvořit terminál pro odemčení/zamčení dveří pomocí 
 ![Screenshot](/Labs/project/Images/doorschema1.jpg)
 
 ### Popis hardwaru
+#### Základní deska
+##### Arty A7: Artix-7 FPGA
+
 
 ### Popis VHDL modulů a simulací
+
 #### Seven-segment display decoder
 #### Architecture
 ```vhdl
 architecture Behavioral of hex_7seg is
-
 begin
     p_7seg_decoder : process(hex_i)
     begin
