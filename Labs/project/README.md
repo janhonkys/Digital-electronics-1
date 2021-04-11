@@ -76,11 +76,9 @@ end Behavioral;
 
 
 ``` 
-#### Screenshot with simulated time waveforms
+### Video
 
-![Screenshot](/Labs/08-traffic_lights/Images/sig.jpg)
-
-### 3. Smart controller
+### Reference
 
 
 
