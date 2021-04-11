@@ -14,8 +14,7 @@ Cílem projektu je vytvořit terminál pro odemčení/zamčení dveří pomocí 
 ![Screenshot](/Labs/project/Images/doorschema1.jpg)
 
 ### Popis hardwaru
-#### Základní deska
-##### Arty A7: Artix-7 FPGA
+#### Základní deska Arty A7: Artix-7 FPGA
 Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 
 ### Popis VHDL modulů a simulací
