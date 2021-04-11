@@ -10,7 +10,7 @@ Adam Hora, Daniel Haluška, Marek Halaš, Jan Honkyš
 Cílem projektu je vytvořit terminál pro odemčení/zamčení dveří pomocí 4místného PIN kódu, s použitím 4x3 tlačítek, 4 sedmisegmentových displejů, relé pro ovládání zámku dveří.
 
 
-#### Vizualizace řešení
+#### Návrh vizualizace řešení
 ![Screenshot](/Labs/project/Images/doorschema1.jpg)
 #### Stavový diagram
 ![Screenshot](/Labs/project/Images/diagram.jpg)
