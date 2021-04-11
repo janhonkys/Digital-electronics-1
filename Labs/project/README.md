@@ -10,9 +10,9 @@ Jan Honkyš
 
 
 ### Cíle projektu
-Cílem projektu je vytvořit terminál pro odemčení/zamčení dveří pomocí 4místného PIN kódu, s použitím 4x3 tlačítek, 4 sedmisegmentového displeje, relé pro ovládání zámku dveří.
+Cílem projektu je vytvořit terminál pro odemčení/zamčení dveří pomocí 4místného PIN kódu, s použitím 4x3 tlačítek, 4 sedmisegmentového displeje, relé pro ovládání zámku dveří.  
 
-
+#### Vizualizace řešení
 ![Screenshot](/Labs/project/Images/doorschema1.jpg)
 
 
