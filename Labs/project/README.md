@@ -22,7 +22,7 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 
 #### Sedmi segmentový dekodér na displej
 ![Screenshot](/Labs/project/Images/hex7.jpg)
-Slouží k převodu vstupního 4 bitového signálu na výstupní 7mi bitový signál.  
+Slouží k převodu vstupního 4 bitového signálu na výstupní 7mi bitový signál, který je zobrazen na displeji.  
 #### Převodní tabulka dekodéru na 7mi segmentový displej
 | Hex | Inputs | A | B | C | D | E | F | G |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
