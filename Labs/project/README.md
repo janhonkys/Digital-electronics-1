@@ -24,7 +24,7 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 ![Screenshot](/Labs/project/Images/hex7.jpg)
 Slouží k převodu vstupního 4 bitového signálu na výstupní 7mi bitový signál, který je zobrazen na displeji.  
 #### Převodní tabulka dekodéru na 7mi segmentový displej
-| Hex | Inputs | A | B | C | D | E | F | G |
+| Hex | Vstup | A | B | C | D | E | F | G |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 1 | 0001 | 1 | 0 | 0 | 1 | 1 | 1 | 1 |
