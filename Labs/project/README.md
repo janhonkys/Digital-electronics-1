@@ -20,7 +20,7 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 
 ### Popis VHDL modulů a simulací
 
-#### Sedmi segmentový dekodér na displej
+#### Dekodér na sedmi segmentový displej
 ![Screenshot](/Labs/project/Images/hex7.jpg)
 Slouží k převodu vstupního 4 bitového signálu na výstupní 7mi bitový signál, který je zobrazen na displeji.  
 #### Převodní tabulka dekodéru na 7mi segmentový displej
