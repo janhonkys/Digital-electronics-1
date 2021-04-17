@@ -8,7 +8,7 @@ Cílem projektu je vytvořit terminál pro odemčení / zamčení dveří pomoc�
 
 ### Návrh vizualizace řešení
 ![Screenshot](/Labs/project/Images/doorschema1.jpg)
-### Stavový diagram
+### Stavový diagram process
 ![Screenshot](/Labs/project/Images/diagram.jpg)
 ## Popis hardwaru
 ### Základní deska Arty A7-100T
