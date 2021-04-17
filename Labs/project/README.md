@@ -20,7 +20,22 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 
 ### Popis VHDL modulů a simulací
 #### Klávesnice
-![Screenshot](/Labs/project/Images/keyboard.jpg)
+#### Převodní tabulka dekodéru na 7mi segmentový displej
+| Hex | Vstup | hor_1 | hor_2 | hor_3 | hor_4 | ver_1 | ver_2 | ver_3 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0000 | 0 | 0 | 0 | 1 | 0 | 1 | 0 |
+| 1 | 0001 | 1 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 2 | 0010 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
+| 3 | 0011 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 4 | 0100 | 1 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 5 | 0101 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| 6 | 0110 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 7 | 0111 | 0 | 0 | 1 | 1 | 1 | 1 | 1 |
+| 8 | 1000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | 1001 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| enter | 1010 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| cancel | 1011 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+
 ##### Architektura
 ```vhdl
 architecture Behavioral of keypad_4x3 is
@@ -83,7 +98,6 @@ end Behavioral;
 ```
 
 #### Dekodér na 7mi segmentový displej
---![Screenshot](/Labs/project/Images/hex7.jpg)
 Slouží k převodu vstupního 4 bitového signálu na výstupní 7mi bitový signál, který je zobrazen na displeji.  
 #### Převodní tabulka dekodéru na 7mi segmentový displej
 | Hex | Vstup | A | B | C | D | E | F | G |
