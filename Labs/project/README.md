@@ -43,11 +43,12 @@ Slouží k převodu vstupního 4 bitového signálu na výstupní 7mi bitový si
 | E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
 | F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 
-#### Architecture
+##### Architecture
 ```vhdl
 architecture Behavioral of hex_7seg is
 begin
-    p_7seg_decoder : process(hex_i)
+
+p_7seg_decoder : process(hex_i)
     begin
         case hex_i is
             when "0000" =>
@@ -61,30 +62,31 @@ begin
             when "0100" =>
                 seg_o <= "1001100";     -- 4
             when "0101" =>
-                seg_o <= "0100100";     -- 5
+                seg_o <= "0100100";     -- 5    
             when "0110" =>
                 seg_o <= "0100000";     -- 6
             when "0111" =>
-                seg_o <= "0011111";     -- 7
+                seg_o <= "0001111";     -- 7
             when "1000" =>
                 seg_o <= "0000000";     -- 8
             when "1001" =>
                 seg_o <= "0000100";     -- 9
             when "1010" =>
-                seg_o <= "0001000";     -- A
+                seg_o <= "0001000";     -- A 
             when "1011" =>
                 seg_o <= "1100000";     -- B
             when "1100" =>
                 seg_o <= "0110001";     -- C
             when "1101" =>
-                seg_o <= "1000010";     -- D
+                seg_o <= "1000010";     -- D 
             when "1110" =>
-                seg_o <= "0110000";     -- E              
+                seg_o <= "0110000";     -- E
             when others =>
-                seg_o <= "0111000";     -- F
+                seg_o <= "1111111";     -- NOTHING
         end case;
     end process p_7seg_decoder;
-end Behavioral;
+  
+end architecture Behavioral;
 
 ```
 
