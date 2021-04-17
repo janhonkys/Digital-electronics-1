@@ -476,7 +476,7 @@ begin
 end testbench;
 ```
 
-### Ovladač 4 7mi segmentových displejů 
+### Ovladač 4 7mi segmentových displejů ????? je název dobře???
 POPIS???????????
 #### Vstupní porty
 ```vhdl
