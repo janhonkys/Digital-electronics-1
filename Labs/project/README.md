@@ -1,8 +1,8 @@
-## Terminál pro odemčení/zamčení dveří pomocí 4místného PIN kódu
+# Terminál pro odemčení/zamčení dveří pomocí 4místného PIN kódu
 
 
 
-### Členové týmu
+## Členové týmu
 Adam Hora, Daniel Haluška, Marek Halaš, Jan Honkyš
 
 
