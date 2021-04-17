@@ -345,7 +345,7 @@ architecture Behavioral of controler is
     end process p_result_controler;
 end Behavioral;
 ```
-#### Testbench
+#### Testbench hlavní řídící jednotky
 ```vhdl
 architecture testbench of tb_controler is
 
@@ -581,7 +581,7 @@ begin
 
 end architecture Behavioral;
 ```
-### Clock enable
+### Clock enable Hodinový signál?????
 #### Vstupní porty
 ```vhdl
 entity clock_enable is
@@ -758,7 +758,6 @@ p_7seg_decoder : process(hex_i)
 end architecture Behavioral;
 
 ```
-
 
 ## Popis TOP modulu a simulace
 
