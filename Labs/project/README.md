@@ -36,7 +36,7 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 | enter | 1010 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 | cancel | 1011 | 0 | 0 | 0 | 1 | 0 | 0 | 1 |
 
-#### Entity
+#### Vstupní porty
 ```vhdl
 entity keypad_4x3 is
     port(
@@ -115,7 +115,7 @@ p_output_keypad : process(clk)
 end Behavioral;
 ```
 ### Hlavní řídící jednotka
-#### Entity
+#### Vstupní porty
 ```vhdl
 entity controler is
  port(
@@ -476,7 +476,7 @@ end testbench;
 
 ### Ovladač 4 7mi segmentových displejů 
 
-#### Entity
+#### Vstupní porty
 ```vhdl
 entity driver_7seg_4digits is
     port(
@@ -582,7 +582,7 @@ begin
 end architecture Behavioral;
 ```
 ### Clock enable
-#### Entity
+#### Vstupní porty
 ```vhdl
 entity clock_enable is
     generic(
@@ -635,7 +635,7 @@ end architecture Behavioral;
 ```
 
 ### Obousměrný čítač
-#### Entity
+#### Vstupní porty
 ```vhdl
 entity cnt_up_down is
     generic(
@@ -761,6 +761,21 @@ end architecture Behavioral;
 
 
 ## Popis TOP modulu a simulace
+
+### Vstupní porty
+```vhdl
+entity top is
+    Port ( 
+           CLK100MHZ : in STD_LOGIC;
+
+           btn : in STD_LOGIC_VECTOR (4-1 downto 0);
+                      
+           ja : in STD_LOGIC_VECTOR (8-1 downto 0);
+           jb : out STD_LOGIC_VECTOR (8-1 downto 0);
+           jc : out STD_LOGIC_VECTOR (8-1 downto 0)    
+           ); 
+end top;
+```
 ### Architektura TOP modulu
 ```vhdl
 architecture Behavioral of top is
