@@ -17,7 +17,7 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 ## Popis VHDL modulů a simulací
 ### Klávesnice
 #### Převodní tabulka vstupů na výstup
-
+POPIS ???????????
 
 | Vstup HEX | Výstup | hor_1 | hor_2 | hor_3 | hor_4 | ver_1 | ver_2 | ver_3 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -113,7 +113,8 @@ p_output_keypad : process(clk)
 end Behavioral;
 ```
 ### Hlavní řídící jednotka
-Slouží ke spracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, zámek dveři se otevře. Když neodpovídá správnému heslu, zámek dveři se neotevře a spustí se alarm. Vstupní signál z klávesnice je zpracován na 4 výstupní signály, které jsou předány do ovladače 4 7mi segmentových displejů.  
+Slouží ke spracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, zámek dveři se otevře. Když neodpovídá správnému heslu, zámek dveři se neotevře a spustí se alarm. 
+Vstupní signál z klávesnice je zpracován na 4 výstupní signály, které jsou předány do ovladače 4 7mi segmentových displejů.  
 
 #### Vstupní porty
 ```vhdl
