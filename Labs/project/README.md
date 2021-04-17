@@ -116,6 +116,8 @@ end Behavioral;
 Slouží ke spracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, zámek dveři se otevře. Když neodpovídá správnému heslu, zámek dveři se neotevře a spustí se alarm. 
 Vstupní signál z klávesnice je zpracován na 4 výstupní signály, které jsou předány do ovladače 4 7mi segmentových displejů.  
 
+Stačí tak???????????
+
 #### Vstupní porty
 ```vhdl
 entity controler is
@@ -189,7 +191,6 @@ architecture Behavioral of controler is
             data3_o <= s_pass_4;
             
             if(number_i = UNDEFINED)then
-            
             
             else
  
@@ -476,7 +477,7 @@ end testbench;
 ```
 
 ### Ovladač 4 7mi segmentových displejů 
-
+POPIS???????????
 #### Vstupní porty
 ```vhdl
 entity driver_7seg_4digits is
@@ -582,7 +583,7 @@ begin
 
 end architecture Behavioral;
 ```
-### Clock enable Hodinový signál?????
+### Clock enable | je | Hodinový signál?????
 #### Vstupní porty
 ```vhdl
 entity clock_enable is
@@ -690,9 +691,8 @@ begin
 end architecture behavioral;
 ```
 
-
 ### Dekodér na 7mi segmentový displej
-Slouží k převodu vstupního 4 bitového signálu na výstupní 7mi bitový signál, který je zobrazen na displeji.  
+Slouží k převodu vstupního 4 bitového signálu na výstupní 7mi bitový signál, který se zobrazuje na displeji.  
 #### Převodní tabulka dekodéru na 7mi segmentový displej
 | Hex | Vstup | A | B | C | D | E | F | G |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -762,6 +762,7 @@ end architecture Behavioral;
 
 ## Popis TOP modulu a simulace
 
+
 ### Vstupní porty
 ```vhdl
 entity top is
@@ -776,6 +777,7 @@ entity top is
            ); 
 end top;
 ```
+
 ### Architektura TOP modulu
 ```vhdl
 architecture Behavioral of top is
@@ -788,7 +790,7 @@ architecture Behavioral of top is
     signal   s_data2  : std_logic_vector(4 - 1 downto 0);
     signal   s_data3  : std_logic_vector(4 - 1 downto 0);
     
-    
+
 begin
 
     --------------------------------------------------------------------
