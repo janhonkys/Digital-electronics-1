@@ -20,11 +20,11 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 
 ### Popis VHDL modulů a simulací
 #### Klávesnice
+##### Architektura
 ```vhdl
 architecture Behavioral of keypad_4x3 is
 
      signal s_number      : std_logic_vector(4 - 1 downto 0);
-     
      constant number_0 : std_logic_vector(4 - 1 downto 0) := b"0000";
      constant number_1 : std_logic_vector(4 - 1 downto 0) := b"0001";
      constant number_2 : std_logic_vector(4 - 1 downto 0) := b"0010";
@@ -40,7 +40,6 @@ architecture Behavioral of keypad_4x3 is
      constant UNDEFINED : std_logic_vector(4 - 1 downto 0) := b"1111";     
 
 begin
-
 
 p_output_keypad : process(clk)
     begin
