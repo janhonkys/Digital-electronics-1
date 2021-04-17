@@ -6,20 +6,20 @@
 Adam Hora, Daniel Haluška, Marek Halaš, Jan Honkyš
 
 
-### Cíle projektu
+## Cíle projektu
 Cílem projektu je vytvořit terminál pro odemčení/zamčení dveří pomocí 4místného PIN kódu, s použitím 4x3 tlačítek, 4 sedmisegmentových displejů, relé pro ovládání zámku dveří.
 
 
-#### Návrh vizualizace řešení
+### Návrh vizualizace řešení
 ![Screenshot](/Labs/project/Images/doorschema1.jpg)
-#### Stavový diagram
+### Stavový diagram
 ![Screenshot](/Labs/project/Images/diagram.jpg)
-### Popis hardwaru
-#### Základní deska Arty A7: Artix-7 FPGA
+## Popis hardwaru
+### Základní deska Arty A7: Artix-7 FPGA
 Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 
-### Popis VHDL modulů a simulací
-#### Klávesnice
+## Popis VHDL modulů a simulací
+### Klávesnice
 #### Převodní tabulka vstupů na výstup
 | Hex | Vstup | hor_1 | hor_2 | hor_3 | hor_4 | ver_1 | ver_2 | ver_3 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -36,7 +36,7 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 | enter | 1010 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 | cancel | 1011 | 0 | 0 | 0 | 1 | 0 | 0 | 1 |
 
-##### Architektura
+#### Architektura
 ```vhdl
 architecture Behavioral of keypad_4x3 is
 
@@ -97,7 +97,7 @@ p_output_keypad : process(clk)
 end Behavioral;
 ```
 
-#### Dekodér na 7mi segmentový displej
+### Dekodér na 7mi segmentový displej
 Slouží k převodu vstupního 4 bitového signálu na výstupní 7mi bitový signál, který je zobrazen na displeji.  
 #### Převodní tabulka dekodéru na 7mi segmentový displej
 | Hex | Vstup | A | B | C | D | E | F | G |
@@ -119,7 +119,7 @@ Slouží k převodu vstupního 4 bitového signálu na výstupní 7mi bitový si
 | E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
 | F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 
-##### Architecture
+#### Architecture
 ```vhdl
 architecture Behavioral of hex_7seg is
 begin
@@ -167,8 +167,8 @@ end architecture Behavioral;
 ```
 
 
-### Popis TOP modulu a simulace
-#### Architektura TOP modulu
+## Popis TOP modulu a simulace
+### Architektura TOP modulu
 ```vhdl
 architecture Behavioral of top is
     -- No internal signals
@@ -237,9 +237,9 @@ end architecture Behavioral;
 ```
 
 ![Screenshot](/Labs/project/Images/top.jpg)
-### Video
+## Video
 
-### Reference
+## Reference
 https://github.com/shahjui2000/Push-Button-Door-VHDL-
 
 https://www.kth.se/social/files/5458faeef276544021bdf437/codelockVHDL_eng.pdf
