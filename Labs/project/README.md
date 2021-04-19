@@ -737,7 +737,7 @@ begin
 
 end architecture Behavioral;
 ```
-### Clock enable | je | Hodinový signál?????
+### Hodinový signál
 #### Vstupní porty
 ```vhdl
 entity clock_enable is
@@ -916,7 +916,6 @@ end architecture Behavioral;
 
 ## TOP modul a simulace
 
-
 ### Vstupní porty
 ```vhdl
 entity top is
@@ -999,18 +998,20 @@ begin
 
 end architecture Behavioral;
 ```
+
 ### Testbench TOP modulu
 ```vhdl
 architecture Behavioral of top is
 
 ```
+
 ### Schéma top modulu
 ![Screenshot](/Labs/project/Images/top4.jpg)
+
 ## Video
 
 ## Reference
 https://github.com/shahjui2000/Push-Button-Door-VHDL-
-
 https://www.kth.se/social/files/5458faeef276544021bdf437/codelockVHDL_eng.pdf
 
 
