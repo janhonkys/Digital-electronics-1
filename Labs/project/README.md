@@ -14,7 +14,7 @@ Cílem projektu je vytvořit terminál pro odemčení / zamčení dveří pomoc�
 ![Screenshot](/Labs/project/Images/p_keypad.jpg)
 ## Popis hardwaru
 ### Základní deska Arty A7-100T
-Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
+Parametry: Interní hodinový signál, 4 PMOD rozhraní, USB-UART rozhraní, 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 
 ## Popis VHDL modulů a simulací
 ### Klávesnice
