@@ -23,7 +23,7 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 
 #### Převodní tabulka vstupů na výstup
 
-| Vstup | Výstup | hor_1 | hor_2 | hor_3 | hor_4 | ver_1 | ver_2 | ver_3 |
+| Tlačítko | Výstup | hor_1 | hor_2 | hor_3 | hor_4 | ver_1 | ver_2 | ver_3 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 0 | 0 | 0 | 1 | 0 | 1 | 0 |
 | 1 | 0001 | 1 | 0 | 1 | 0 | 1 | 0 | 0 |
