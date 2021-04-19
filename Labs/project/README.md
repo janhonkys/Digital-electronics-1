@@ -19,7 +19,7 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 ## Popis VHDL modulů a simulací
 ### Klávesnice
 #### Plošný spoj klávesnice
-![Screenshot](/Labs/project/Images/keypad_pl.jpg)
+![Screenshot](/Labs/project/Images/keypad_pl.png)
 
 #### Převodní tabulka vstupů na výstup
 
