@@ -1,0 +1,1 @@
+-wto "7461985374864df6b38de65817108a28" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_keypad_4x3_behav" "xil_defaultlib.tb_keypad_4x3" -log "elaborate.log" 
