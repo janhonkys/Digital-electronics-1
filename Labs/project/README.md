@@ -268,7 +268,7 @@ end Behavioral;
 
 
 ### Hlavní řídící jednotka
-Slouží ke spracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, zámek dveři se otevře. Vstupní signál z klávesnice je zpracován na výstupní signál, který je předán ovladači 4 7mi segmentových displejů.  
+Slouží ke zpracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, zámek dveři se otevře. Vstupní signál z klávesnice je zpracován na výstupní signál, který je předán ovladači 4 7mi segmentových displejů.  
 
 Stačí tak???????????
 
