@@ -18,8 +18,10 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs
 
 ## Popis VHDL modulů a simulací
 ### Klávesnice
+#### Plošný spoj klávesnice
+![Screenshot](/Labs/project/Images/keypad_pl.jpg)
+
 #### Převodní tabulka vstupů na výstup
-POPIS ???????????
 
 | Vstup | Výstup | hor_1 | hor_2 | hor_3 | hor_4 | ver_1 | ver_2 | ver_3 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -913,7 +915,7 @@ end architecture Behavioral;
 
 ```
 
-## Popis TOP modulu a simulace
+## TOP modul a simulace
 
 
 ### Vstupní porty
@@ -1004,8 +1006,7 @@ architecture Behavioral of top is
 
 ```
 ### Schéma top modulu
-UPDATE!!!!!!!!!!!!
-![Screenshot](/Labs/project/Images/top.jpg)
+![Screenshot](/Labs/project/Images/top4.jpg)
 ## Video
 
 ## Reference
