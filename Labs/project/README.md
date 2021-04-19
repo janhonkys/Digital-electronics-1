@@ -1005,7 +1005,7 @@ architecture Behavioral of top is
 ```
 ### Schéma top modulu
 UPDATE!!!!!!!!!!!!
-![Screenshot](/Labs/project/Images/top.jpg)
+![Screenshot](/Labs/project/Images/top4.jpg)
 ## Video
 
 ## Reference
