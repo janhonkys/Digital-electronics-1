@@ -36,6 +36,8 @@ POPIS ???????????
 | enter | 1010 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 | cancel | 1011 | 0 | 0 | 0 | 1 | 0 | 0 | 1 |
 
+#### Plošný spoj klávesnice
+
 #### Vstupní porty
 ```vhdl
 entity keypad_4x3 is
@@ -913,7 +915,7 @@ end architecture Behavioral;
 
 ```
 
-## Popis TOP modulu a simulace
+## TOP modul a simulace
 
 
 ### Vstupní porty
@@ -1004,7 +1006,6 @@ architecture Behavioral of top is
 
 ```
 ### Schéma top modulu
-UPDATE!!!!!!!!!!!!
 ![Screenshot](/Labs/project/Images/top4.jpg)
 ## Video
 
