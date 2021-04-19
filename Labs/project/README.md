@@ -268,8 +268,7 @@ end Behavioral;
 
 
 ### Hlavní řídící jednotka
-Slouží ke spracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, zámek dveři se otevře. Když neodpovídá správnému heslu, zámek dveři se neotevře a spustí se alarm. 
-Vstupní signál z klávesnice je zpracován na 4 výstupní signály, které jsou předány do ovladače 4 7mi segmentových displejů.  
+Slouží ke spracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, zámek dveři se otevře. Vstupní signál z klávesnice je zpracován na výstupní signál, které je předán ovladači 4 7mi segmentových displejů.  
 
 Stačí tak???????????
 
@@ -631,8 +630,8 @@ begin
 end testbench;
 ```
 
-### Ovladač 4 7mi segmentových displejů ????? je název dobře???
-POPIS???????????
+### Ovladač 4 7mi segmentových displejů
+
 #### Vstupní porty
 ```vhdl
 entity driver_7seg_4digits is
