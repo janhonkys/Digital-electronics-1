@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_keypad_4x3_behav/xsimk.exe -simmode gui -wdb tb_keypad_4x3_behav.wdb -simrunnum 0 -socket 49680
+Design successfully loaded
+Design Loading Memory Usage: 5972 KB (Peak: 5972 KB)
+Design Loading CPU Usage: 61 ms
