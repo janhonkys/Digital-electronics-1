@@ -881,7 +881,7 @@ architecture Behavioral of top is
 
 ```
 
-### Schéma top modulu
+### Schéma TOP modulu
 ![Screenshot](/Labs/project/Images/top4.jpg)
 
 ## Video
