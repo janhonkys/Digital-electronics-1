@@ -791,7 +791,8 @@ end architecture Behavioral;
 ```
 
 ## TOP modul a simulace
-
+### Schéma TOP modulu
+![Screenshot](/Labs/project/Images/top4.jpg)
 ### Vstupní porty
 ```vhdl
 entity top is
@@ -881,8 +882,6 @@ architecture Behavioral of top is
 
 ```
 
-### Schéma TOP modulu
-![Screenshot](/Labs/project/Images/top4.jpg)
 
 ## Video
 
