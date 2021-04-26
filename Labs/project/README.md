@@ -268,7 +268,7 @@ p_clk_gen : process
         
 end Behavioral;
 ```
-#### Screenshot tb_keypad
+#### Screenshot simulace tb_keypad
 ![Screenshot](/Labs/project/Images/tb_keypad.jpg)
 
 
@@ -783,7 +783,7 @@ begin
     end process p_stimulus; 
 end testbench;
 ```
-#### Screenshot tb_controller
+#### Screenshot simulace tb_controller
 ![Screenshot](/Labs/project/Images/tb_controller.jpg)
 
 ### Ovladač 4 7mi segmentových displejů
