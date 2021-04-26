@@ -876,11 +876,6 @@ begin
 end architecture Behavioral;
 ```
 
-### Testbench TOP modulu
-```vhdl
-architecture Behavioral of top is
-
-```
 
 
 ## Video
