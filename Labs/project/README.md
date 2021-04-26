@@ -890,4 +890,4 @@ https://github.com/shahjui2000/Push-Button-Door-VHDL-
 
 https://www.kth.se/social/files/5458faeef276544021bdf437/codelockVHDL_eng.pdf
 
-
+https://www.fpga4student.com/2017/09/vhdl-code-for-seven-segment-display.html
