@@ -271,7 +271,7 @@ end Behavioral;
 Slouží ke zpracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, zámek dveři se otevře. Vstupní signál z klávesnice je zpracován na výstupní signál, který je předán ovladači 4 7mi segmentových displejů.
 
 Stačí tak???????????
-
+Zadání hesla, master pass na nic se nečeká, heslo 2222
 #### Vstupní porty
 ```vhdl
 entity controler is
