@@ -42,16 +42,16 @@ doplnkové věci k hardwaru, použít klávesnici
 ```vhdl
 entity keypad_4x3 is
     port(
-        clk     : in  std_logic;
-        hor_1 : in  std_logic;
-        hor_2 : in  std_logic;
-        hor_3 : in  std_logic;
-        hor_4 : in  std_logic;
-        ver_1 : in  std_logic;
-        ver_2 : in  std_logic;
-        ver_3 : in  std_logic;
+        clk   : in  std_logic;                              -- input for clock
+        hor_1 : in  std_logic;                              -- input for first row
+        hor_2 : in  std_logic;                              -- input for second row
+        hor_3 : in  std_logic;                              -- input for third row
+        hor_4 : in  std_logic;                              -- input for fourth row
+        ver_1 : in  std_logic;                              -- input for first cloumn
+        ver_2 : in  std_logic;                              -- input for second column
+        ver_3 : in  std_logic;                              -- input for third column
                 
-        number_o : out std_logic_vector(4 - 1 downto 0)
+        number_o : out std_logic_vector(4 - 1 downto 0)     -- output for number
          
       );  
 end keypad_4x3;
@@ -60,68 +60,72 @@ end keypad_4x3;
 ```vhdl
 architecture Behavioral of keypad_4x3 is
 
-     signal s_number      : std_logic_vector(4 - 1 downto 0);
-     constant number_0 : std_logic_vector(4 - 1 downto 0) := b"0000";
-     constant number_1 : std_logic_vector(4 - 1 downto 0) := b"0001";
-     constant number_2 : std_logic_vector(4 - 1 downto 0) := b"0010";
-     constant number_3 : std_logic_vector(4 - 1 downto 0) := b"0011";
-     constant number_4 : std_logic_vector(4 - 1 downto 0) := b"0100";
-     constant number_5 : std_logic_vector(4 - 1 downto 0) := b"0101";
-     constant number_6 : std_logic_vector(4 - 1 downto 0) := b"0110";
-     constant number_7 : std_logic_vector(4 - 1 downto 0) := b"0111";
-     constant number_8 : std_logic_vector(4 - 1 downto 0) := b"1000";
-     constant number_9 : std_logic_vector(4 - 1 downto 0) := b"1001";
-     constant ENTER : std_logic_vector(4 - 1 downto 0) := b"1010";
-     constant CANCEL : std_logic_vector(4 - 1 downto 0) := b"1011";
-     constant UNDEFINED : std_logic_vector(4 - 1 downto 0) := b"1111";     
+     signal s_number    : std_logic_vector(4 - 1 downto 0);
+     
+     constant number_0  : std_logic_vector(4 - 1 downto 0) := b"0000";      -- setting constants for numbel 0-9 in binary
+     constant number_1  : std_logic_vector(4 - 1 downto 0) := b"0001";
+     constant number_2  : std_logic_vector(4 - 1 downto 0) := b"0010";
+     constant number_3  : std_logic_vector(4 - 1 downto 0) := b"0011";
+     constant number_4  : std_logic_vector(4 - 1 downto 0) := b"0100";
+     constant number_5  : std_logic_vector(4 - 1 downto 0) := b"0101";
+     constant number_6  : std_logic_vector(4 - 1 downto 0) := b"0110";
+     constant number_7  : std_logic_vector(4 - 1 downto 0) := b"0111";
+     constant number_8  : std_logic_vector(4 - 1 downto 0) := b"1000";
+     constant number_9  : std_logic_vector(4 - 1 downto 0) := b"1001";
+     constant ENTER     : std_logic_vector(4 - 1 downto 0) := b"1010";      -- for enter
+     constant CANCEL    : std_logic_vector(4 - 1 downto 0) := b"1011";      -- for cancel
+     constant UNDEFINED : std_logic_vector(4 - 1 downto 0) := b"1111";      -- and for undefined   
 
 begin
+
 
 p_output_keypad : process(clk)
     begin
         
-        if rising_edge(clk) then
+        if rising_edge(clk) then                        -- defining numbers based on inputs
             
-            number_o <= UNDEFINED; 
-            if(hor_4 = '1' AND ver_2 = '1')then
+            number_o <= UNDEFINED;          
+                               
+            if(hor_1 = '0' AND hor_2 = '0' AND hor_3 = '0' AND hor_4 = '1' AND ver_1 = '0' AND ver_2 = '1' AND ver_3 = '0')then         -- fourth row and second column for value 0
                 s_number <= number_0;
-            elsif(hor_3 = '1' AND ver_1 = '1')then
+            elsif(hor_1 = '0' AND hor_2 = '0' AND hor_3 = '1' AND hor_4 = '0' AND ver_1 = '1' AND ver_2 = '0' AND ver_3 = '0')then      -- third row and first column for value 1
                 s_number <= number_1;
-            elsif(hor_3 = '1' AND ver_2 = '1')then
+            elsif(hor_1 = '0' AND hor_2 = '0' AND hor_3 = '1' AND hor_4 = '0' AND ver_1 = '0' AND ver_2 = '1' AND ver_3 = '0')then      -- third row and second column for value 2
                 s_number <= number_2;
-            elsif(hor_3 = '1' AND ver_3 = '1')then
+            elsif(hor_1 = '0' AND hor_2 = '0' AND hor_3 = '1' AND hor_4 = '0' AND ver_1 = '0' AND ver_2 = '0' AND ver_3 = '1')then      -- third row and third column for value 3
                 s_number <= number_3;
-            elsif(hor_2 = '1' AND ver_1 = '1')then
-                s_number <= number_4;
-            elsif(hor_2 = '1' AND ver_2 = '1')then
-                s_number <= number_5;
-            elsif(hor_2 = '1' AND ver_3 = '1')then
+            elsif(hor_1 = '0' AND hor_2 = '1' AND hor_3 = '0' AND hor_4 = '0' AND ver_1 = '1' AND ver_2 = '0' AND ver_3 = '0')then      -- second row and first column for value 4
+                s_number <= number_4;      
+            elsif(hor_1 = '0' AND hor_2 = '1' AND hor_3 = '0' AND hor_4 = '0' AND ver_1 = '0' AND ver_2 = '1' AND ver_3 = '0')then      -- second row and second column for value 5
+                s_number <= number_5;      
+            elsif(hor_1 = '0' AND hor_2 = '1' AND hor_3 = '0' AND hor_4 = '0' AND ver_1 = '0' AND ver_2 = '0' AND ver_3 = '1')then      -- second row and third column for value 6
                 s_number <= number_6;
-            elsif(hor_1 = '1' AND ver_1 = '1')then
+            elsif(hor_1 = '1' AND hor_2 = '0' AND hor_3 = '0' AND hor_4 = '0' AND ver_1 = '1' AND ver_2 = '0' AND ver_3 = '0')then      -- first row and first column for value 7
                 s_number <= number_7;
-            elsif(hor_1 = '1' AND ver_2 = '1')then
+            elsif(hor_1 = '1' AND hor_2 = '0' AND hor_3 = '0' AND hor_4 = '0' AND ver_1 = '0' AND ver_2 = '1' AND ver_3 = '0')then      -- first row and second column for value 8
                 s_number <= number_8;
-            elsif(hor_1 = '1' AND ver_3 = '1')then
+            elsif(hor_1 = '1' AND hor_2 = '0' AND hor_3 = '0' AND hor_4 = '0' AND ver_1 = '0' AND ver_2 = '0' AND ver_3 = '1')then      -- first row and third column for value 9
                 s_number <= number_9;
-            elsif(hor_4 = '1' AND ver_1 = '1')then
+            elsif(hor_1 = '0' AND hor_2 = '0' AND hor_3 = '0' AND hor_4 = '1' AND ver_1 = '1' AND ver_2 = '0' AND ver_3 = '0')then      -- fourth row and first column for ENTER
                 s_number <= ENTER;
-            elsif(hor_4 = '1' AND ver_3 = '1')then
+            elsif(hor_1 = '0' AND hor_2 = '0' AND hor_3 = '0' AND hor_4 = '1' AND ver_1 = '0' AND ver_2 = '0' AND ver_3 = '1')then      -- fourth row and third column for CANCEL
                 s_number <= CANCEL;
-            elsif(hor_1 = '0' AND hor_2 = '0' AND hor_3 = '0' AND hor_4 = '0' AND ver_1 = '0' AND ver_2 = '0' AND ver_3 = '0')then
-                number_o <= s_number;
-                s_number <= UNDEFINED;
+            elsif(hor_1 = '0' AND hor_2 = '0' AND hor_3 = '0' AND hor_4 = '0' AND ver_1 = '0' AND ver_2 = '0' AND ver_3 = '0')then      -- if we don't have inputs, then number is undefined
+                number_o <= s_number;    -- 
+                s_number <= UNDEFINED;  
+            else                            -- if have been pressed 2 or more buttons in same time, then number is undefined
+                number_o <= UNDEFINED;
+            end if;
                  
-            end if;               
+            
         end if; -- Synchronous reset
+        
     end process p_output_keypad;
+
 end Behavioral;
 ```
 #### Testbench klávesnice
 ```vhdl
-entity tb_keypad_4x3 is
---  Port ( );
-end tb_keypad_4x3;
-
 architecture Behavioral of tb_keypad_4x3 is
     
     constant c_CLK_100MHZ_PERIOD : time := 10 ns;
@@ -162,7 +166,8 @@ p_clk_gen : process
     
      p_stimulus : process
     begin
-      
+        
+        
         s_hor_1 <= '0';
         s_hor_2 <= '0';
         s_hor_3 <= '0';
@@ -276,17 +281,19 @@ Zadání hesla, master pass na nic se nečeká, heslo 2222
 ```vhdl
 entity controler is
  port(
-        clk     : in  std_logic;
-        reset   : in  std_logic;
-        number_i : in  std_logic_vector(4 - 1 downto 0);
-        door_i : in  std_logic;
-        alarm_o : out  std_logic;
-        locker_o : out  std_logic;
+        clk       : in  std_logic;                                  -- input for clock
+        reset     : in  std_logic;                                  -- input for reset
+        number_i  : in  std_logic_vector(4 - 1 downto 0);           -- input for number
+        door_i    : in  std_logic;                                  -- input for door
+        alarm_o   : out  std_logic;                                 -- output for alarm
+        locker_o  : out  std_logic;                                 -- output for "locker"
         
-        data0_o : out  std_logic_vector(4 - 1 downto 0);
-        data1_o : out  std_logic_vector(4 - 1 downto 0);
-        data2_o : out  std_logic_vector(4 - 1 downto 0);
-        data3_o : out  std_logic_vector(4 - 1 downto 0)
+        rgb_o     : out  std_logic_vector(3 - 1 downto 0);          -- output for RGB diode
+        
+        data0_o   : out  std_logic_vector(4 - 1 downto 0);          -- output for first number of password
+        data1_o   : out  std_logic_vector(4 - 1 downto 0);          -- output for second number of password
+        data2_o   : out  std_logic_vector(4 - 1 downto 0);          -- output for third number of password
+        data3_o   : out  std_logic_vector(4 - 1 downto 0)           -- output for fourth number of password
         
     );
 end controler;
@@ -295,192 +302,223 @@ end controler;
 ```vhdl
 architecture Behavioral of controler is
     
-    type   t_state is (CLOSE, OPENED, WAITH, ALARM, MASTER);
-    signal s_state  : t_state;
+    type   t_state is (CLOSE, OPENED, WAITH, AFTERTIME, ALARM, MASTER);             -- types of states
+    signal s_state  : t_state;                                                      -- assign state to signal
     
-    type   t_state_pass is (POS1, POS2, POS3, POS4, ENT);
-    signal s_state_pass  : t_state_pass;
-    signal   s_clk  : std_logic; 
-    signal   s_cnt  : unsigned(5 - 1 downto 0):= b"0_0000";
-    signal   s_alarm  : std_logic;
-    signal   s_door  : std_logic;
-    signal   s_reset_pass : std_logic;
+    type   t_state_pass is (POS1, POS2, POS3, POS4, ENT);                           -- types of states by pressing of buttons
+    signal s_state_pass  : t_state_pass;                                            -- assign state_pass to signal
     
-    signal   s_pass_1  : std_logic_vector(4 - 1 downto 0);
-    signal   s_pass_2  : std_logic_vector(4 - 1 downto 0);
-    signal   s_pass_3  : std_logic_vector(4 - 1 downto 0);
-    signal   s_pass_4  : std_logic_vector(4 - 1 downto 0);
-    signal   s_pass : std_logic_vector(16 - 1 downto 0);
+    signal   s_clk  : std_logic;                                                    -- signal for clock
     
-    constant c_DELAY_10SEC : unsigned(5 - 1 downto 0) := b"1_0000"; --upravit podla cnt
-    constant c_ZERO       : unsigned(5 - 1 downto 0) := b"0_0000";
+    signal   s_cnt  : unsigned(32 - 1 downto 0):= b"0000_0000_0000_0000_0000_0000_0000_0000"; -- nejak neviem zisti? ?o je to s_cnt
     
-    constant c_MASTER_pass : std_logic_vector(16 - 1 downto 0) := b"0001_0001_0001_0001";
-    constant c_SLAVE_pass : std_logic_vector(16 - 1 downto 0) := b"0010_0010_0010_0010";
-    constant c_UNDEFINED_pass : std_logic_vector(16 - 1 downto 0) := b"1111_1111_1111_1111";
+    signal   s_alarm  : std_logic;                              -- signal for alarm
+    signal   s_reset_pass : std_logic;                          -- signal for reset password
     
-    constant UNDEFINED : std_logic_vector(4 - 1 downto 0) := b"1111";
-    constant CANCEL : std_logic_vector(4 - 1 downto 0) := b"1011";
-    constant ENTER : std_logic_vector(4 - 1 downto 0) := b"1010";
-    constant HIGH : std_logic := '1';
-    constant LOW : std_logic := '0';
+    signal   s_pass_1  : std_logic_vector(4 - 1 downto 0);      -- signal for first password position 
+    signal   s_pass_2  : std_logic_vector(4 - 1 downto 0);      -- for second
+    signal   s_pass_3  : std_logic_vector(4 - 1 downto 0);      -- for third
+    signal   s_pass_4  : std_logic_vector(4 - 1 downto 0);      -- for last
+    signal   s_pass : std_logic_vector(16 - 1 downto 0);        -- signal for whole password
+                                                               
     
+    constant c_DELAY_10SEC : unsigned(32 - 1 downto 0) := b"0000_0000_0000_0000_0000_0000_0110_0100";       -- time constant for 10s (but changed to 100ns, becose we want see that in our simulation)
+    constant c_ZERO       : unsigned(32 - 1 downto 0) := b"0000_0000_0000_0000_0000_0000_0000_0000";        -- time constant for 0s
+                                                                                                          
+    constant c_MASTER_pass : std_logic_vector(16 - 1 downto 0) := b"0001_0001_0001_0001";                   -- master password is 1111
+    constant c_SLAVE_pass : std_logic_vector(16 - 1 downto 0) := b"0010_0010_0010_0010";                    -- normal password is 2222
+    constant c_UNDEFINED_pass : std_logic_vector(16 - 1 downto 0) := b"1111_1111_1111_1111";                -- undefined password
+    
+    constant c_UNDEFINED : std_logic_vector(4 - 1 downto 0) := b"1111";                                     -- constant for unexistent button
+    constant c_CANCEL : std_logic_vector(4 - 1 downto 0) := b"1011";                                        -- constant for cancel
+    constant c_ENTER : std_logic_vector(4 - 1 downto 0) := b"1010";                                         -- constant for enter
+    
+    constant c_RED : std_logic_vector(3 - 1 downto 0) := b"100";                                            -- constants for rgb diode   - for red
+    constant c_GREEN : std_logic_vector(3 - 1 downto 0) := b"010";                                          --                           - for green
+    constant c_YELOW : std_logic_vector(3 - 1 downto 0) := b"110";                                          --                           - for yellow
+
     begin
-    p_keypad_watcher : process(clk, s_reset_pass)
+    
+    
+    p_keypad_watcher : process(clk, s_reset_pass, reset)
     begin
         
-        if s_reset_pass = '1' then -- treba dako vyhutat
-            s_pass <= c_UNDEFINED_pass;
-            s_pass_1 <= UNDEFINED;
-            s_pass_2 <= UNDEFINED;
-            s_pass_3 <= UNDEFINED;
-            s_pass_4 <= UNDEFINED;
+    if reset = '1' then
+        s_pass <= c_UNDEFINED_pass;                         -- password will be undefined
+        s_pass_1 <= c_UNDEFINED;                            -- first position will be undefined
+        s_pass_2 <= c_UNDEFINED;                            -- second
+        s_pass_3 <= c_UNDEFINED;                            -- third
+        s_pass_4 <= c_UNDEFINED;
+        s_state_pass <= POS1;    
+    
+    else    
+        if s_reset_pass = '1' then -- treba dako vyhutat        -- if s_reset_pass = 1 then
+            s_pass <= c_UNDEFINED_pass;                         -- password will be undefined
+            s_pass_1 <= c_UNDEFINED;                            -- first position will be undefined
+            s_pass_2 <= c_UNDEFINED;                            -- second
+            s_pass_3 <= c_UNDEFINED;                            -- third
+            s_pass_4 <= c_UNDEFINED;                            -- and last
         end if;
         
         if falling_edge(clk) then
             
-            data0_o <= s_pass_1;
-            data1_o <= s_pass_2;
-            data2_o <= s_pass_3;
-            data3_o <= s_pass_4;
-            
-            if(number_i = UNDEFINED)then
-            
-            else
- 
-                case (s_state_pass) is
-                    when POS1 =>
-                        if (number_i = CANCEL OR number_i = ENTER)then
-                            s_pass_1 <= UNDEFINED;
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
-                            s_state_pass <= POS1;
-                        else 
-                            s_pass_1 <= number_i;
-                            s_state_pass <= POS2;
-                        end if;
-                        
-                    when POS2 => 
-                    
-                        if (number_i = CANCEL OR number_i = ENTER)then
-                            s_pass_1 <= UNDEFINED;
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
-                            s_state_pass <= POS1;
-                        else 
-                            s_pass_2 <= number_i;
-                            s_state_pass <= POS3;
-                        end if;
-                        
-                    when POS3 => 
-                        if (number_i = CANCEL OR number_i = ENTER)then    
-                            s_pass_1 <= UNDEFINED;
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
-                            s_state_pass <= POS1;
-                        else 
-                            s_pass_3 <= number_i;
-                            s_state_pass <= POS4;
-                        end if;  
-                        
-                    when POS4 => 
-                        if (number_i = CANCEL)then
-                            s_pass_1 <= UNDEFINED;
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
-                            s_state_pass <= POS1;
-                        else 
-                            s_pass_4 <= number_i;
-                            s_state_pass <= ENT;
-                        end if;
-                        
-                     when ENT => 
-                        if (number_i = CANCEL)then
-                            s_pass_1 <= UNDEFINED;
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
-                            s_state_pass <= POS1;
-                        elsif (number_i = ENTER)then
-                            s_state_pass <= POS1;
-                            s_pass <= s_pass_1 & s_pass_2 & s_pass_3 & s_pass_4 ;
-                            s_pass_1 <= UNDEFINED; -- abo nejaky znak iny 
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
-                        else
-                            s_state_pass <= ENT;
-                        end if;
-                     when others =>
-                        s_state_pass <= POS1;
-                end case;
-          
+                if(number_i = c_UNDEFINED)then
+                
+                                                                    -- proces for enter password
+                else
+     
+                    case (s_state_pass) is
+                        when POS1 =>                                                -- assign first position
+                            if (number_i = c_CANCEL OR number_i = c_ENTER)then      -- if is pressed cancel or enter
+                                s_pass_1 <= c_UNDEFINED;                            -- then first position will be undefined
+                                s_pass_2 <= c_UNDEFINED;                            -- second
+                                s_pass_3 <= c_UNDEFINED;                            -- third
+                                s_pass_4 <= c_UNDEFINED;                            -- fourth
+                                s_state_pass <= POS1;                               -- and whole password
+                            else 
+                                s_pass_1 <= number_i;                               -- if it is number 1-9 then we have first position 
+                                s_state_pass <= POS2;                               -- and change state to POS2
+                            end if;
+                            
+                        when POS2 => 
+                                                                                    -- pos2
+                            if (number_i = c_CANCEL OR number_i = c_ENTER)then      -- same as pos1
+                                s_pass_1 <= c_UNDEFINED;
+                                s_pass_2 <= c_UNDEFINED;
+                                s_pass_3 <= c_UNDEFINED;
+                                s_pass_4 <= c_UNDEFINED;
+                                s_state_pass <= POS1;
+                            else 
+                                s_pass_2 <= number_i;                               -- now we have second position
+                                s_state_pass <= POS3;                               -- and change state to POS3
+                            end if;
+                            
+                        when POS3 =>                                                -- same as pos2
+                            if (number_i = c_CANCEL OR number_i = c_ENTER)then    
+                                s_pass_1 <= c_UNDEFINED;
+                                s_pass_2 <= c_UNDEFINED;
+                                s_pass_3 <= c_UNDEFINED;
+                                s_pass_4 <= c_UNDEFINED;
+                                s_state_pass <= POS1;
+                            else 
+                                s_pass_3 <= number_i;
+                                s_state_pass <= POS4;
+                            end if;  
+                            
+                        when POS4 =>                                                -- same as pos2
+                            if (number_i = c_CANCEL)then
+                                s_pass_1 <= c_UNDEFINED;
+                                s_pass_2 <= c_UNDEFINED;
+                                s_pass_3 <= c_UNDEFINED;
+                                s_pass_4 <= c_UNDEFINED;
+                                s_state_pass <= POS1;
+                            else 
+                                s_pass_4 <= number_i;
+                                s_state_pass <= ENT;                                    -- but state will be changed to ENT
+                            end if;
+                            
+                         when ENT =>                                                    -- state ENT
+                            if (number_i = c_CANCEL)then                                -- if is pressed CANCEL 
+                                s_pass_1 <= c_UNDEFINED;                                -- then first position will be undefined
+                                s_pass_2 <= c_UNDEFINED;                                -- second
+                                s_pass_3 <= c_UNDEFINED;                                -- third
+                                s_pass_4 <= c_UNDEFINED;                                -- forth
+                                s_state_pass <= POS1;                                   -- and whole password
+                            elsif (number_i = c_ENTER)then                              -- if is pressed ENTER
+                                s_state_pass <= POS1;                                   -- state will change to POS1
+                                s_pass <= s_pass_1 & s_pass_2 & s_pass_3 & s_pass_4 ;   -- pass_1, pass_2, pass_3 nad pass_4 will be merged
+                                s_pass_1 <= c_UNDEFINED; -- abo nejaky znak iny         -- then all password position will be undefined
+                                s_pass_2 <= c_UNDEFINED;
+                                s_pass_3 <= c_UNDEFINED;
+                                s_pass_4 <= c_UNDEFINED;
+                            else
+                                s_state_pass <= ENT;                                    -- if we dont press enter or cancel then we are again in ENT
+                            end if;
+                         when others =>
+                            s_state_pass <= POS1;                                       -- else state is again pos1
+                    end case;
+              
+                end if;
+                   
             end if;
-            
-            --povodne elsif      
-        end if;
+    end if;    
     end process p_keypad_watcher;
     
 
-    p_result_controler : process(clk)
+    p_result_controler : process(clk, reset)                               -- proces for result
     begin
+    
+    if reset = '1' then
+        s_state <= CLOSE;    
+        locker_o <= '0';
+        rgb_o <= c_RED;
+        s_alarm <= '0';
+        
+    else
+    
         if rising_edge(clk) then
                      
                 case s_state is
-           
-                    when CLOSE =>
-                        
-                        if ((s_pass = c_MASTER_pass) OR (s_pass = c_SLAVE_pass))then
-                            s_state <= OPENED; -- mozna led
-                        else 
-                            s_state <= CLOSE;  -- mozna led
-                            locker_o <= '0';
+                                            
+                    when CLOSE =>                                                           -- state close
+                                                                                          
+                        if ((s_pass = c_MASTER_pass) OR (s_pass = c_SLAVE_pass))then        -- if password is rigth (1111 or 2222)
+                            s_state <= OPENED; -- mozna led                                 -- then state is changed to opened
+                        else                                                                
+                            s_state <= CLOSE;  -- mozna led                                 -- else
+                            locker_o <= '0';                                                -- door is locked
+                            rgb_o <= c_RED;                                                 -- and color of diode is red
                         end if;
                     
-                    when OPENED =>
+                    when OPENED =>                                          -- state opened
 
-                        if (s_cnt < c_DELAY_10SEC) then
-                            s_cnt <= s_cnt + 1;
-                            locker_o <= '1';
+                        if (s_cnt < c_DELAY_10SEC) then                     -- if the time is less than 10s 
+                            s_cnt <= s_cnt + 1;                             
+                            locker_o <= '1';                                -- then door will be opened
+                            rgb_o <= c_GREEN;                               -- and diode is green
                         else
-                            s_state <= WAITH;
-                            locker_o <= '0';
-                            s_cnt   <= c_ZERO;
+                            s_state <= WAITH;                               -- if is time more than 10s
+                            locker_o <= '0';                                -- door will be closed
+                            s_cnt   <= c_ZERO;                              -- and time is reset (0)
                         end if;
                     
-                    when WAITH =>
+                    when WAITH =>                                           -- state waith
                     
-                        if (s_cnt < c_DELAY_10SEC) then
+                        if (s_cnt < c_DELAY_10SEC) then                     -- if the time is less than 10s
                             s_cnt <= s_cnt + 1;
-                        elsif (s_door = '1') then
-                            s_state <= CLOSE;
-                            s_reset_pass <= '1';
-                            s_cnt   <= c_ZERO;
-                        elsif (s_pass = c_MASTER_pass) then
-                            s_state <= MASTER;
-                            s_reset_pass <= '1';
-                            s_cnt   <= c_ZERO;
+                            rgb_o <= c_YELOW;                               -- then color of diode will be yellow
+                        elsif (door_i = '1') then                           -- if the door will be closed 
+                            s_state <= CLOSE;                               -- then we go to state close
+                            s_reset_pass <= '1';                            -- password is reseted
+                            s_cnt   <= c_ZERO;                              -- and time will be reset too
                         else
-                            s_state <= ALARM;
-                            s_cnt   <= c_ZERO;
-                            s_reset_pass <= '1';
+                            s_state <= AFTERTIME;                           -- it the time is more than 10s then we go to state AFTERTIME
+                            s_cnt   <= c_ZERO;                              -- time is 0
+           
                         end if;
                     
-                    when ALARM =>
-                        s_alarm <= '1';
-                     
-                    when MASTER =>
-                        if (s_door = '1') then
-                            s_state <= CLOSE;
+                    when AFTERTIME =>                                       -- state aftertime
+                        if (s_pass = c_MASTER_pass) then                    -- if was password 1111 (master password)                                                              
+                            s_state <= MASTER;                              -- then state is changed to MASTER
+                            s_reset_pass <= '1';                            -- and password is reseted
+                        else                                                      
+                        s_reset_pass <= '1';                                -- else password is reseted
+                        s_state <= ALARM;                                   -- and state is changed to ALARM
+                        end if;
+                        
+                    when ALARM =>                                           -- state alarm
+                        s_alarm <= '1';                                     -- if the alarm is on
+                        s_state <= CLOSE;                                   -- then we go to state CLOSE    
+                                         
+                    when MASTER =>                                          -- state master
+                        if (door_i = '1') then                              -- if door is closed 
+                            s_state <= CLOSE;                               -- then we go to state CLOSE
                         else    
-                            s_state <= MASTER;
+                            s_state <= MASTER;                              -- if the door is open 
+                            rgb_o <= c_GREEN;                               -- then we stay in state MASTER and diode is green
                         end if;
                     when others =>
-                        s_state <= CLOSE;
+                        s_state <= CLOSE;                                   -- ielse state is close
 
                 end case;
               end if;
@@ -489,21 +527,261 @@ architecture Behavioral of controler is
             
             s_reset_pass <= '0';
             
-            if (s_alarm = '1') then 
-                if (s_pass = c_MASTER_pass)then
-                    s_alarm <= '0';
-                    s_reset_pass <= '1'; 
+            if (s_alarm = '1') then                         -- alarm is on
+                if (s_pass = c_MASTER_pass)then             -- if the password was master password 
+                    s_alarm <= '0';                         -- then alarm is off
+                    s_reset_pass <= '1';                    -- and password is reseted
+                     s_state <= CLOSE;                    
                 else 
-                    s_alarm <='1';
+                    s_alarm <='1';                          -- else alarm is on
                 end if; 
             end if; -- Alarm
-            end if; -- Falling edge
-    end process p_result_controler;
+        end if; -- Falling edge
+    end if;
+    end process p_result_controler;                   
+                                        
+    alarm_o <= s_alarm ;                -- signal shift from architecture to entity (alarm)
+    
+    data0_o <= s_pass_1;                -- signal shift from architecture to entity (all parts of password)
+    data1_o <= s_pass_2;
+    data2_o <= s_pass_3;
+    data3_o <= s_pass_4;
+    
 end Behavioral;
 ```
 #### Testbench hlavní řídící jednotky
 ```vhdl
-dodělat
+architecture testbench of tb_controler is
+
+    constant c_CLK_100MHZ_PERIOD : time := 10 ns;
+
+    --Local signals
+    signal s_clk_100MHz     : std_logic;
+    signal s_reset          : std_logic;
+    signal s_number_i       : std_logic_vector(4 - 1 downto 0);
+    signal s_door_i         : std_logic;
+    signal s_alarm_o        : std_logic;
+    signal s_locker_o       : std_logic;
+    
+    signal  s_hor_1 :   std_logic;
+    signal  s_hor_2 :   std_logic;
+    signal  s_hor_3 :   std_logic;
+    signal  s_hor_4 :   std_logic;
+    signal  s_ver_1 :   std_logic;
+    signal  s_ver_2 :   std_logic;
+    signal  s_ver_3 :   std_logic;
+    
+    signal  s_data0_o :   std_logic_vector(4-1 downto 0);
+    signal  s_data1_o :   std_logic_vector(4-1 downto 0);
+    signal  s_data2_o :   std_logic_vector(4-1 downto 0);
+    signal  s_data3_o :   std_logic_vector(4-1 downto 0);
+    
+    signal  s_rgb_o :   std_logic_vector(3-1 downto 0);
+    
+    
+    
+begin
+            -- signals shift from controler to signals in this tb
+    uut_controler : entity work.controler
+        port map(
+            clk     => s_clk_100MHz,
+            reset   => s_reset,
+            number_i => s_number_i,
+            door_i   => s_door_i ,
+            alarm_o   => s_alarm_o ,
+            locker_o  => s_locker_o, 
+            
+            rgb_o => s_rgb_o,
+       
+            data0_o => s_data0_o,
+            data1_o => s_data1_o,
+            data2_o => s_data2_o,
+            data3_o => s_data3_o        
+            
+        );
+            -- -- signals shift from keypad to signals in this tb
+    uut_keypad_4x3 : entity work.keypad_4x3
+        port map(
+            clk     => s_clk_100MHz,
+            hor_1   => s_hor_1,
+            hor_2   => s_hor_2,
+            hor_3   => s_hor_3,
+            hor_4   => s_hor_4,
+            ver_1   => s_ver_1,
+            ver_2   => s_ver_2,
+            ver_3   => s_ver_3,
+            number_o => s_number_i
+        );
+         -- proces for clock
+    p_clk_gen : process
+    begin
+        while now < 100000000 ns loop       -- while is time less than 10s
+            s_clk_100MHz <= '0';            -- then clk_100MHz is 0
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk_100MHz <= '1';            -- after 5 ns is 1 
+            wait for c_CLK_100MHZ_PERIOD / 2;
+                                            -- and loop until time will be 10s
+        end loop;
+        wait;
+    end process p_clk_gen;
+    
+    p_stimulus : process
+    begin
+        
+        
+        s_hor_1 <= '0';
+        s_hor_2 <= '0';            -- set to 0
+        s_hor_3 <= '0';
+        s_hor_4 <= '0';
+        s_ver_1 <= '0';
+        s_ver_2 <= '0';
+        s_ver_3 <= '0';
+        s_door_i <= '0';
+        
+        s_reset <= '1';             -- set reset to 1
+        wait for 100 ns;
+        s_reset <= '0';             -- set reset to 0
+        wait for 10 ns;
+        
+        s_hor_3 <= '1';             -- press 1
+        s_ver_1 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_1 <= '0';
+        wait for 40 ns;
+        
+        s_hor_3 <= '1';             -- press 1
+        s_ver_1 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_1 <= '0';
+        wait for 40 ns;
+        
+        s_hor_4 <= '1'; 
+        s_ver_3 <= '1';             -- press cancel
+        wait for 40 ns;
+        s_hor_4 <= '0';             -- set signal to zero
+        s_ver_3 <= '0';
+        wait for 40 ns;
+        
+        
+        s_hor_3 <= '1';             -- press 2
+        s_ver_2 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_2 <= '0';
+        wait for 40 ns;
+        
+        s_hor_3 <= '1';             -- press 2
+        s_ver_2 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_2 <= '0';
+        wait for 40 ns;
+        
+        s_hor_3 <= '1';             -- press 2
+        s_ver_2 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_2 <= '0';
+        wait for 40 ns;
+        
+        s_hor_3 <= '1';             -- press 2
+        s_ver_2 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_2 <= '0';
+        wait for 40 ns;
+        
+        
+        s_hor_4 <= '1';             -- press enter
+        s_ver_1 <= '1';
+        wait for 40 ns;
+        s_hor_4 <= '0';             -- set signals to zero
+        s_ver_1 <= '0';
+        
+        wait for 1.6 us;
+        s_door_i <= '1';            -- door will be closed
+         wait for  40 ns;
+        
+        wait for 1 us;
+        
+        s_hor_3 <= '1';             -- press 2
+        s_ver_2 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_2 <= '0';
+        wait for 40 ns;
+        
+        s_hor_3 <= '1';             -- press 2
+        s_ver_2 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_2 <= '0';
+        wait for 40 ns;
+        
+        s_hor_3 <= '1';             -- press 2
+        s_ver_2 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_2 <= '0';
+        wait for 40 ns;
+        
+        s_hor_3 <= '1';             -- press 2
+        s_ver_2 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_2 <= '0';
+        wait for 40 ns;
+                
+        s_hor_4 <= '1'; 
+        s_ver_1 <= '1';             -- press enter
+        wait for 40 ns;
+        s_hor_4 <= '0';             -- set signal to zero
+        s_ver_1 <= '0';
+        wait for 40 ns;        
+        s_door_i <= '0';            -- door will be closed 
+        wait for 2 us;      
+              
+        s_hor_3 <= '1';             -- press 1
+        s_ver_1 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_1 <= '0';
+        wait for 40 ns;
+        
+        s_hor_3 <= '1';             -- press 1
+        s_ver_1 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_1 <= '0';
+        wait for 40 ns;
+        
+        s_hor_3 <= '1';             -- press 1
+        s_ver_1 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_1 <= '0';
+        wait for 40 ns;
+        
+        s_hor_3 <= '1';             -- press 1
+        s_ver_1 <= '1';
+        wait for 40 ns;
+        s_hor_3 <= '0';             -- set signals to zero
+        s_ver_1 <= '0';
+        wait for 40 ns;
+                
+        s_hor_4 <= '1'; 
+        s_ver_1 <= '1';             -- press enter
+        wait for 40 ns;
+        s_hor_4 <= '0'; 
+        s_ver_1 <= '0';       
+                
+        wait; 
+         
+        wait;
+    end process p_stimulus; 
+end testbench;
 ```
 
 ### Ovladač 4 7mi segmentových displejů
@@ -799,12 +1077,17 @@ entity top is
     Port ( 
            CLK100MHZ : in STD_LOGIC;
 
-           btn : in STD_LOGIC_VECTOR (4-1 downto 0);
+           btn : in STD_LOGIC_VECTOR (4-1 downto 0);    --reset
                       
-           ja : in STD_LOGIC_VECTOR (8-1 downto 0);
-           jb : out STD_LOGIC_VECTOR (8-1 downto 0);
-           jc : out STD_LOGIC_VECTOR (8-1 downto 0)    
-           ); 
+           ja : in STD_LOGIC_VECTOR (8-1 downto 0);     -- door imput for keypad
+           jb : out STD_LOGIC_VECTOR (8-1 downto 0);    -- cathodes for 7-segment display
+           jc : out STD_LOGIC_VECTOR (8-1 downto 0);    -- anodes for alarm, door, locker
+           
+           led0_b : out STD_LOGIC;                      -- led rgb
+           led0_g : out STD_LOGIC;
+           led0_r : out STD_LOGIC
+              
+           );
 end top;
 ```
 
