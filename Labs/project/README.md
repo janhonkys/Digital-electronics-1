@@ -17,7 +17,7 @@ Cílem projektu je vytvořit terminál pro odemčení / zamčení dveří pomoc�
 Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs, interní hodinový signál, 4 PMOD rozhraní, USB-UART rozhraní
 doplnkové věci k hardwaru, použít klávesnici 
 ### Klávesnice
-Klávesnice je navržena maticově, 4 řádky, 3 sloupce.
+Klávesnice je vzhledem k počtu vstupů na základní desce navržena maticově, 4 řádky, 3 sloupce.
 #### Plošný spoj klávesnice
 ![Screenshot](/Labs/project/Images/keypad_pl.png)
 ## Popis VHDL modulů a simulací
