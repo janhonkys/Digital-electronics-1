@@ -1184,7 +1184,7 @@ end architecture Behavioral;
 ```
 
 ## Diskuse o výsledcích
-Zadání projektu jsme rozšířili o LED RGB diodu, která mění barvu podle aktuálního stavu v process controller a o alarm, který je realizovaný sirénou. Výsledky projektu se shodují s naší představou a očekáváním. 
+Zadání projektu jsme rozšířili o LED RGB diodu, která mění barvu podle aktuálního stavu v process controller a o alarm, který je realizovaný sirénou. Výsledky projektu se shodují s naší představou a očekáváním. Program by bylo vhodné otestoval na hardwaru a ověřit funkčnost.
 
 ## Video
 
