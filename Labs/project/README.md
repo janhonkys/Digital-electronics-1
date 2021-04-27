@@ -34,7 +34,7 @@ Další komponenty nevím, popis????????????????
 ![Screenshot](/Labs/project/Images/keypad.jpg)
 
 #### keypad1
-![Screenshot](/Labs/project/Images/keypad1.png)
+![Screenshot](/Labs/project/Images/keypad1.jpg)
 
 ## Popis VHDL modulů a simulací
 ### Klávesnice
