@@ -3,7 +3,7 @@
 ## Členové týmu
 Adam Hora, Daniel Haluška, Marek Halaš, Jan Honkyš
 
-https://github.com/janhonkys/Digital-electronics-1/tree/main/Labs/project/project
+https://github.com/janhonkys/Digital-electronics-1/tree/main/Labs/project
 
 ## Cíle projektu
 Cílem projektu je vytvořit terminál pro odemčení / zamčení dveří pomocí 4místného PIN kódu, s použitím 4x3 tlačítek, 4 sedmisegmentových displejů, relé pro ovládání zámku dveří.
