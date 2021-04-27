@@ -19,7 +19,26 @@ doplnkové věci k hardwaru, použít klávesnici
 ### Klávesnice
 Klávesnice je vzhledem k počtu vstupů na základní desce navržena maticově, 4 řádky, 3 sloupce.
 #### Plošný spoj klávesnice
-![Screenshot](/Labs/project/Images/keypad_pl.png)
+![Screenshot](/Labs/project/Images/keyboard.png)
+
+#### Plošný spoj displeje
+![Screenshot](/Labs/project/Images/disp.png)
+
+#### displej
+![Screenshot](/Labs/project/Images/display.png)
+
+#### displej1
+![Screenshot](/Labs/project/Images/display1.png)
+
+#### displej
+![Screenshot](/Labs/project/Images/display.png)
+
+#### displej
+![Screenshot](/Labs/project/Images/keypad.png)
+
+#### displej
+![Screenshot](/Labs/project/Images/display.png)
+
 ## Popis VHDL modulů a simulací
 ### Klávesnice
 
