@@ -43,7 +43,7 @@ Použili jsme 4 7mi segmentové displeje K121, zapojené se společnou katodou. 
 
 ## Popis VHDL modulů a simulací
 ### Klávesnice
-Klávesnice je navržena tak, že po stlačení klávesy se nestane nic, dokud se klávesa nepustí, potom je hodnota zapsaná na 1 impuls hodinového signálu do paměti. Při stlačení několika kláves naráz se nic nestane, při jejich puštění se do paměti zapíše nedefinovaná hodnota. 
+Klávesnice je navržena tak, že po stisknutí tlačítka se nestane nic, dokud se tlačítko nepustí. Po puštění tlačítka je hodnota zapsaná na 1 impuls hodinového signálu do paměti. Při stlačení několika kláves naráz se nic nestane, při jejich puštění se do paměti zapíše nedefinovaná hodnota. 
 
 #### Převodní tabulka vstupů na výstup
 
@@ -293,12 +293,11 @@ p_clk_gen : process
 end Behavioral;
 ```
 #### Screenshot simulace tb_keypad
-Postupně zkoušíme stisknutí jednotlivých tlačítek, simulace proběhla v pořádku, signál odpovídá převodní tabulce. 
+Postupně zkoušíme stisknutí jednotlivých tlačítek, simulace proběhla v pořádku, výstupní signál odpovídá převodní tabulce. 
 ![Screenshot](/Labs/project/Images/tb_keypad.jpg)
 
-
 ### Hlavní řídící jednotka
-Slouží ke zpracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, které je nastaveno na kombinaci čísel 2222, zámek dveři se otevře. Po dobu 10s budou dveře otevřeny (v simulaci nastaveno 100ns), poté se zámek dveří zavře a čeká se na zavření dveří 10s (v simulaci 100 ns), pokud se dveře do časového intervalu nezavřou (signál door_i), spustí se alarm, který je možný resetovat master heslem 1111. Při otvoření dveří použitím master hesla je zámek otevřený na 10s (v simulaci 100ns), ale následně se nečeká na zavření dveří, nespustí se alarm. Vstupní signál z klávesnice je zpracován na výstupní signály, které jsou předány ovladači 4 7mi segmentových displejů.
+Slouží ke zpracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, které je nastaveno na kombinaci čísel 2222, zámek dveři se otevře. Po dobu 10s budou dveře otevřeny (v simulaci nastaveno 1000ns), poté se zámek dveří zavře a čeká se na zavření dveří 10s (v simulaci 1000 ns), pokud se dveře do časového intervalu nezavřou (signál door_i), spustí se alarm, který je možný resetovat master heslem 1111. Při otvoření dveří použitím master hesla je zámek otevřený na 10s (v simulaci 1000ns), ale následně se nečeká na zavření dveří, nespustí se alarm. Vstupní signál z klávesnice je zpracován na výstupní signály, které jsou předány ovladači 4 7mi segmentových displejů.
 
 
 
