@@ -296,13 +296,13 @@ end Behavioral;
 
 
 ### Hlavní řídící jednotka
-Slouží ke zpracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, které je nastaveno na kombinaci čísel 2222, zámek dveři se otevře. Po dobu 10s budou dveře otevřeny (v simulaci nastaveno 100ns), poté se zámek dveří zavře. 
+Slouží ke zpracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, které je nastaveno na kombinaci čísel 2222, zámek dveři se otevře. Po dobu 10s budou dveře otevřeny (v simulaci nastaveno 100ns), poté se zámek dveří zavře a čeká se na zavření dveří 10s (v simulaci 100 ns), pokud se dveře do časového intervalu nezavřou (signál door_i), spustí se alarm, který je možný resetovat master heslem 1111. Při otvoření dveří použitím master hesla je zámek otevřený na 10s (v simulaci 100ns), ale následně se nečeká na zavření dveří, nespustí se alarm. 
 
 Vstupní signál z klávesnice je zpracován na výstupní signály, které jsou předány ovladači 4 7mi segmentových displejů.
 
 
 
-Stačí tak???????????
+
 Zadání hesla, master pass na nic se nečeká, heslo 2222
 #### Vstupní porty
 ```vhdl
