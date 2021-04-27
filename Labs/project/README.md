@@ -805,7 +805,7 @@ begin
 end testbench;
 ```
 #### Screenshot simulace tb_controller
-Na začátku zkoušíme zadat 2 čísla, poté stlačíme cancel. S state pass se vrátil na POS1. Následně zadáme správné heslo, potvrdíme enter, dveře se otevřou na dobu 1000 ns, následně jsou dveře zavřené, nedojde ke spuštění alarmu. Po chvíli zadáme správné heslo, ale dveře nezavřeme, zapne se alarm. Alarm se zruší zadáním master hesla 1111, při tomto zadání nedojde k otevření dveří, toto heslo se používalo pro zrušení alarmu.
+Na začátku zkoušíme zadat 2 čísla, poté stlačíme cancel. S state pass se vrátil na POS1. Následně zadáme správné heslo, potvrdíme enter, dveře se otevřou na dobu 1000 ns, následně jsou dveře zavřené, nedojde ke spuštění alarmu. Po chvíli zadáme správné heslo, ale dveře nezavřeme, zapne se alarm. Alarm se zruší zadáním master hesla 1111, při tomto zadání nedojde k otevření dveří, toto heslo se používalo pro zrušení alarmu.<br><br>
 ![Screenshot](/Labs/project/Images/tb_controller1.jpg)
 
 ### Ovladač 4 7mi segmentových displejů
