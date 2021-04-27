@@ -16,7 +16,7 @@ Cílem projektu je vytvořit terminál pro odemčení / zamčení dveří pomoc�
 ### Základní deska Arty A7-100T
 Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs, interní hodinový signál, 4 PMOD rozhraní, USB-UART rozhraní
 ![Screenshot](/Labs/project/Images/arty.jpg)
-FOTKU PŘIDAT 
+ 
 ### Klávesnice
 Klávesnice je vzhledem k počtu vstupů na základní desce navržena maticově, 4 řádky, 3 sloupce.
 #### Schéma zapojení klávesnice
