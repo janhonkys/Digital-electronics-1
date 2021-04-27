@@ -15,7 +15,8 @@ Cílem projektu je vytvořit terminál pro odemčení / zamčení dveří pomoc�
 ## Popis hardwaru
 ### Základní deska Arty A7-100T
 Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs, interní hodinový signál, 4 PMOD rozhraní, USB-UART rozhraní
-doplnkové věci k hardwaru, použít klávesnici 
+![Screenshot](/Labs/project/Images/keyboard.png)
+FOTKU PŘIDAT 
 ### Klávesnice
 Klávesnice je vzhledem k počtu vstupů na základní desce navržena maticově, 4 řádky, 3 sloupce.
 #### Schéma zapojení klávesnice
@@ -809,7 +810,7 @@ end testbench;
 ```
 #### Screenshot simulace tb_controller
 Na začátku zkoušíme zadat 2 čísla, poté stlačíme cancel. S state pass se vrátil na POS1. Následně zadáme správné heslo, potvrdíme enter, dveře se otevřou na dobu 1000 ns, následně jsou dveře zavřené, nedojde ke spuštění alarmu. Po chvíli zadáme správné heslo, ale dveře nezavřeme, zapne se alarm. Alarm se zruší zadáním master hesla 1111, při tomto zadání nedojde k otevření dveří, toto heslo se používalo pro zrušení alarmu.
-![Screenshot](/Labs/project/Images/tb_controller.jpg)
+![Screenshot](/Labs/project/Images/tb_controller1.jpg)
 
 ### Ovladač 4 7mi segmentových displejů
 
