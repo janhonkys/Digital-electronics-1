@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 27 18:25:55 2021
+# Process ID: 16296
+# Current directory: D:/De1git/Digital-electronics-1/Labs/project/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14400 D:\De1git\Digital-electronics-1\Labs\project\project\project.xpr
+# Log file: D:/De1git/Digital-electronics-1/Labs/project/project/vivado.log
+# Journal file: D:/De1git/Digital-electronics-1/Labs/project/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/De1git/Digital-electronics-1/Labs/project/project/project.xpr
+update_compile_order -fileset sources_1
+eset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+launch_simulation
+source tb_controler.tcl
+close_sim
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_project

@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 27 18:25:55 2021
+# Process ID: 16296
+# Current directory: D:/De1git/Digital-electronics-1/Labs/project/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14400 D:\De1git\Digital-electronics-1\Labs\project\project\project.xpr
+# Log file: D:/De1git/Digital-electronics-1/Labs/project/project/vivado.log
+# Journal file: D:/De1git/Digital-electronics-1/Labs/project/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/De1git/Digital-electronics-1/Labs/project/project/project.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/De1git/Digital-electronics-1/Labs/project/project/project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/programs/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 1006.105 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 27 18:27:06 2021...
+oject: Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 1004.203 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Apr 27 18:26:34 2021] Launched impl_1...
+Run output will be captured here: D:/De1git/Digital-electronics-1/Labs/project/project/project.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/De1git/Digital-electronics-1/Labs/project/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/De1git/Digital-electronics-1/Labs/project/project/project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/De1git/Digital-electronics-1/Labs/project/project/project.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/De1git/Digital-electronics-1/Labs/project/project/project.srcs/sources_1/new/keypad_4x3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'keypad_4x3'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/De1git/Digital-electronics-1/Labs/project/project/project.srcs/sim_1/new/tb_controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/De1git/Digital-electronics-1/Labs/project/project/project.sim/sim_1/behav/xsim'
+"xelab -wto b426a8de36b6462696cfd2967924eadb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/programs/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b426a8de36b6462696cfd2967924eadb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/De1git/Digital-electronics-1/Labs/project/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_controler_behav -key {Behavioral:sim_1:Functional:tb_controler} -tclbatch {tb_controler.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_controler.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 7000ns
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.203 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_controler_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 7000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1004.203 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Tue Apr 27 18:30:28 2021] Launched impl_1...
+Run output will be captured here: D:/De1git/Digital-electronics-1/Labs/project/project/project.runs/impl_1/runme.log
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 27 18:33:04 2021...
