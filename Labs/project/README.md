@@ -290,7 +290,7 @@ p_clk_gen : process
 end Behavioral;
 ```
 #### Screenshot simulace tb_keypad
-Postupně zkoušíme stisknutí jednotlivých tlačítek, simulace proběhla v pořádku, výstupní signál odpovídá převodní tabulce. 
+Postupně zkoušíme stisknutí jednotlivých tlačítek, simulace proběhla v pořádku, výstupní signál odpovídá převodní tabulce.<br><br>
 ![Screenshot](/Labs/project/Images/tb_keypad.jpg)
 
 ### Hlavní řídící jednotka
