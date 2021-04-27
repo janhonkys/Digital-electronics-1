@@ -23,21 +23,18 @@ Klávesnice je vzhledem k počtu vstupů na základní desce navržena maticově
 
 #### Plošný spoj displeje
 ![Screenshot](/Labs/project/Images/disp.png)
-
+Další komponenty nevím, popis????????????????
 #### displej
-![Screenshot](/Labs/project/Images/display.png)
+![Screenshot](/Labs/project/Images/display.jpg)
 
 #### displej1
-![Screenshot](/Labs/project/Images/display1.png)
+![Screenshot](/Labs/project/Images/display1.jpg)
 
-#### displej
-![Screenshot](/Labs/project/Images/display.png)
+#### keypad
+![Screenshot](/Labs/project/Images/keypad.jpg)
 
-#### displej
-![Screenshot](/Labs/project/Images/keypad.png)
-
-#### displej
-![Screenshot](/Labs/project/Images/display.png)
+#### keypad1
+![Screenshot](/Labs/project/Images/keypad1.png)
 
 ## Popis VHDL modulů a simulací
 ### Klávesnice
