@@ -15,14 +15,35 @@ Cílem projektu je vytvořit terminál pro odemčení / zamčení dveří pomoc�
 ## Popis hardwaru
 ### Základní deska Arty A7-100T
 Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs, interní hodinový signál, 4 PMOD rozhraní, USB-UART rozhraní
-doplnkové věci k hardwaru, použít klávesnici 
+![Screenshot](/Labs/project/Images/keyboard.png)
+FOTKU PŘIDAT 
 ### Klávesnice
 Klávesnice je vzhledem k počtu vstupů na základní desce navržena maticově, 4 řádky, 3 sloupce.
+#### Schéma zapojení klávesnice
+![Screenshot](/Labs/project/Images/keyboard.png)
+
 #### Plošný spoj klávesnice
-![Screenshot](/Labs/project/Images/keypad_pl.png)
+![Screenshot](/Labs/project/Images/keypad.jpg)
+
+#### Osazovací plán plošného spoje klávesnice
+![Screenshot](/Labs/project/Images/keypad1.jpg)
+
+#### Schéma zapojení displeje
+Použili jsme 4 7mi segmentové displeje K121, zapojené se společnou katodou. Nahoře je zapojení pro zámek a externí sirénu.
+![Screenshot](/Labs/project/Images/disp.png)
+
+#### Plošný spoj displeje
+![Screenshot](/Labs/project/Images/display.jpg)
+
+#### Osazovací plán plošného spoje displeje
+![Screenshot](/Labs/project/Images/display1.jpg)
+
+
+
+
 ## Popis VHDL modulů a simulací
 ### Klávesnice
-
+Klávesnice je navržena tak, že po stlačení klávesy se nestane nic, dokud se klávesa nepustí, potom je hodnota zapsaná na 1 impuls hodinového signálu do paměti. Při stlačení několika kláves naráz se nic nestane, při jejich puštění se do paměti zapíše nedefinovaná hodnota. 
 
 #### Převodní tabulka vstupů na výstup
 
@@ -272,14 +293,15 @@ p_clk_gen : process
 end Behavioral;
 ```
 #### Screenshot simulace tb_keypad
+Postupně zkoušíme stisknutí jednotlivých tlačítek, simulace proběhla v pořádku, signál odpovídá převodní tabulce. 
 ![Screenshot](/Labs/project/Images/tb_keypad.jpg)
 
 
 ### Hlavní řídící jednotka
-Slouží ke zpracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, zámek dveři se otevře. Vstupní signál z klávesnice je zpracován na výstupní signál, který je předán ovladači 4 7mi segmentových displejů.
+Slouží ke zpracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, které je nastaveno na kombinaci čísel 2222, zámek dveři se otevře. Po dobu 10s budou dveře otevřeny (v simulaci nastaveno 100ns), poté se zámek dveří zavře a čeká se na zavření dveří 10s (v simulaci 100 ns), pokud se dveře do časového intervalu nezavřou (signál door_i), spustí se alarm, který je možný resetovat master heslem 1111. Při otvoření dveří použitím master hesla je zámek otevřený na 10s (v simulaci 100ns), ale následně se nečeká na zavření dveří, nespustí se alarm. Vstupní signál z klávesnice je zpracován na výstupní signály, které jsou předány ovladači 4 7mi segmentových displejů.
 
-Stačí tak???????????
-Zadání hesla, master pass na nic se nečeká, heslo 2222
+
+
 #### Vstupní porty
 ```vhdl
 entity controler is
@@ -787,7 +809,8 @@ begin
 end testbench;
 ```
 #### Screenshot simulace tb_controller
-![Screenshot](/Labs/project/Images/tb_controller.jpg)
+Na začátku zkoušíme zadat 2 čísla, poté stlačíme cancel. S state pass se vrátil na POS1. Následně zadáme správné heslo, potvrdíme enter, dveře se otevřou na dobu 1000 ns, následně jsou dveře zavřené, nedojde ke spuštění alarmu. Po chvíli zadáme správné heslo, ale dveře nezavřeme, zapne se alarm. Alarm se zruší zadáním master hesla 1111, při tomto zadání nedojde k otevření dveří, toto heslo se používalo pro zrušení alarmu.
+![Screenshot](/Labs/project/Images/tb_controller1.jpg)
 
 ### Ovladač 4 7mi segmentových displejů
 
