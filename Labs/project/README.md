@@ -9,9 +9,9 @@ Cílem projektu je vytvořit terminál pro odemčení / zamčení dveří pomoc�
 ### Návrh vizualizace řešení
 ![Screenshot](/Labs/project/Images/doorschema3.jpg)
 ### Stavový diagram process p_result controller
-![Screenshot](/Labs/project/Images/p_result.jpg)
+![Screenshot](/Labs/project/Images/p_result1.jpg)
 ### Stavový diagram process p_keypad watcher
-![Screenshot](/Labs/project/Images/p_keypad.jpg)
+![Screenshot](/Labs/project/Images/p_keypad1.jpg)
 ## Popis hardwaru
 ### Základní deska Arty A7-100T
 Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs, interní hodinový signál, 4 PMOD rozhraní, USB-UART rozhraní<br><br>
