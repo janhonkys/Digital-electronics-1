@@ -28,7 +28,7 @@ Klávesnice je vzhledem k počtu vstupů na základní desce navržena maticově
 ![Screenshot](/Labs/project/Images/keypad1.jpg)
 
 #### Schéma zapojení displeje
-Použili jsme 4 7mi segmentové displeje, zapojené se společnou katodou. Nahoře je zapojení pro zámek a externí sirénu.
+Použili jsme 4 7mi segmentové displeje K121, zapojené se společnou katodou. Nahoře je zapojení pro zámek a externí sirénu.
 ![Screenshot](/Labs/project/Images/disp.png)
 
 #### Plošný spoj displeje
