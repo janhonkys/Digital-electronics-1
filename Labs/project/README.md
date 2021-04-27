@@ -18,23 +18,26 @@ Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs,
 doplnkové věci k hardwaru, použít klávesnici 
 ### Klávesnice
 Klávesnice je vzhledem k počtu vstupů na základní desce navržena maticově, 4 řádky, 3 sloupce.
-#### Plošný spoj klávesnice
+#### Schéma zapojení klávesnice
 ![Screenshot](/Labs/project/Images/keyboard.png)
 
-#### Plošný spoj displeje
-![Screenshot](/Labs/project/Images/disp.png)
-Další komponenty nevím, popis????????????????
-#### displej
-![Screenshot](/Labs/project/Images/display.jpg)
-
-#### displej1
-![Screenshot](/Labs/project/Images/display1.jpg)
-
-#### keypad
+#### Plošný spoj klávesnice
 ![Screenshot](/Labs/project/Images/keypad.jpg)
 
-#### keypad1
+#### Osazovací plán plošného spoje klávesnice
 ![Screenshot](/Labs/project/Images/keypad1.jpg)
+
+#### Schéma zapojení displeje
+![Screenshot](/Labs/project/Images/disp.png)
+Další komponenty nevím, popis????????????????
+#### Plošný spoj displeje
+![Screenshot](/Labs/project/Images/display.jpg)
+
+#### Osazovací plán plošného spoje displeje
+![Screenshot](/Labs/project/Images/display1.jpg)
+
+
+
 
 ## Popis VHDL modulů a simulací
 ### Klávesnice
